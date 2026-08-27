@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>add a thought</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/startupthoughts.css" />
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body id="add">
+<div id="page">
+
+<header id="bighead">
+<hgroup>
+<h1><a href="/">StartupThoughts</a></h1>
+<h2>a quiet place to think about startups</h2>
+</hgroup>
+
+<nav id="nav">
+<ul>
+	<li><a href="/new">new</a></li>
+	<li><a href="/authors">authors</a></li>
+	<li><a href="/sources">sources</a></li>
+	<li><a href="/contributors">contributors</a></li>
+	<li><a href="/add">add a thought</a></li>
+	<li><a href="/t/82" id="randomlink">random thought</a></li>
+	<li><a href="/search">search</a></li>
+	<li><a href="/about">about</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="content">
+
+<h1>add a thought</h1>
+
+<p>
+One rule: it has to be something a real person really said or wrote, and you have to know where.
+A line everyone repeats but nobody can source does not go in. That rule is the only reason this
+collection is worth reading.
+</p>
+
+<form id="addform" data-repo="" autocomplete="off">
+
+<label for="f_text">the thought</label>
+<textarea id="f_text" name="text" rows="4" maxlength="400" required
+	placeholder="Short. One or two sentences. No quotation marks around it."></textarea>
+<p class="hint"><span id="f_count">0</span>/400</p>
+
+<label for="f_original">the original, if it was not said in English <em>(optional)</em></label>
+<input type="text" id="f_original" name="original"
+	placeholder="Mehnat — baxt keltirar">
+
+<label for="f_author">who said it</label>
+<input type="text" id="f_author" name="author" required
+	placeholder="Zafar Khashimov">
+
+<label for="f_source">where they said it</label>
+<input type="text" id="f_source" name="source" required
+	placeholder="the essay, book, talk or interview it comes from">
+
+<label for="f_url">a link to it <em>(optional, but it is what makes this checkable)</em></label>
+<input type="url" id="f_url" name="source_url" placeholder="https://">
+
+<label for="f_by">your name, so you get the credit</label>
+<input type="text" id="f_by" name="contributor" required placeholder="how you want to be listed">
+
+<input type="submit" id="f_submit" value="prepare it">
+</form>
+
+<div id="addpreview" hidden>
+<h2>this is how it will look</h2>
+<div id="addpreview_body"></div>
+
+<h2>now send it</h2>
+<p class="hint">Pick whichever is easiest. All three end up in the same place.</p>
+<p id="addactions">
+	<a href="#" id="act_pr" class="bigbutton">open a pull request</a>
+	<a href="#" id="act_copy" class="bigbutton">copy the entry</a>
+	<a href="#" id="act_dl" class="bigbutton">download it</a>
+</p>
+<p class="hint" id="act_note"></p>
+
+<pre id="addjson"></pre>
+</div>
+
+</section>
+
+<footer id="bigfoot">
+
+
+<blockquote cite="/t/202">
+	<q>In any conditions, even the most inconvenient ones, you can work out a business model that will take off.</q>
+	<cite><a href="/t/202">Akmal Paiziev</a></cite>
+</blockquote>
+
+</footer>
+
+</div>
+<script src="/js/startupthoughts.js"></script>
+</body>
+</html>
