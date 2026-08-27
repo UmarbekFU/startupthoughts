@@ -58,7 +58,7 @@ def validate(e, existing):
     if missing:
         die("still needed: " + ", ".join(missing))
     if len(e["text"]) > MAX_LEN:
-        die("that is %d characters. A thought has to fit in %d — trim it to the "
+        die("that is %d characters. A thought has to fit in %d. Trim it to the "
             "sentence that carries the idea." % (len(e["text"]), MAX_LEN))
     if len(e["text"]) < 12:
         die("that is too short to be a thought.")
@@ -116,7 +116,7 @@ def main():
     elif args and args[0] == "-":
         entry = read_json(sys.stdin.read())
     elif args:
-        die("unknown option %r — see the top of this file" % args[0])
+        die("unknown option %r. See the top of this file." % args[0])
     else:
         entry = ask()
 
@@ -145,9 +145,9 @@ def main():
     print("  added as /t/%d\n" % e["id"])
 
     if run([sys.executable, "build.py"]) != 0:
-        die("build failed — data/thoughts.json has been written, fix and rebuild")
+        die("build failed. data/thoughts.json has been written; fix and rebuild.")
     if run([sys.executable, "check.py"]) != 0:
-        die("validation failed — see above")
+        die("validation failed. See above.")
 
     # where the contributor now stands (the seed collection does not compete)
     try:
@@ -181,7 +181,7 @@ def main():
         print()
         run(["git", "add", "-A"])
         run(["git", "commit", "-q", "-m",
-             "add: %s — %s" % (e["author"], e["text"][:60])])
+             "add: %s: %s" % (e["author"], e["text"][:60])])
         if run(["git", "push", "-q"]) == 0:
             print("\n  pushed. Vercel is deploying it now.")
     else:

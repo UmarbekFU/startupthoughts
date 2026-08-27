@@ -2,12 +2,11 @@
 
 *a quiet place to think about startups*
 
-A collection of the best things ever said about starting things — one thought per page, big
-enough to read, attributed to a real person and traced back to a real source.
+Quotes about building companies. One per page, each attributed to a named person and linked to
+the source it came from.
 
-Modelled closely on [musicthoughts.com](https://musicthoughts.com/), Derek Sivers' quiet place
-to think about music: same page structure, same URL scheme, same spare serif typography, same
-absence of feeds, scores, comments and tracking.
+It copies [musicthoughts.com](https://musicthoughts.com/), Derek Sivers' site about music: the
+same page structure, URL scheme and serif typography.
 
 ## Running it
 
@@ -22,7 +21,7 @@ python3 serve.py     # http://localhost:4173
 
 | URL | What it is |
 | --- | --- |
-| `/` | home — nothing but the way in |
+| `/` | home, and nothing but the way in |
 | `/new` | every thought, newest first |
 | `/authors` | authors, most-quoted first |
 | `/author/<id>` | one author's thoughts |
@@ -30,7 +29,7 @@ python3 serve.py     # http://localhost:4173
 | `/source/<id>` | everything drawn from one source |
 | `/contributors` | the people who added thoughts |
 | `/contributor/<id>` | one person's contributions |
-| `/add` | add a thought — form, live preview, one-click hand-off |
+| `/add` | add a thought: form, live preview, one-click hand-off |
 | `/t/<id>` | a single thought |
 | `/random` | bounces to a random thought |
 | `/search` | search, run entirely in the browser |
@@ -38,8 +37,8 @@ python3 serve.py     # http://localhost:4173
 
 ## Adding a thought
 
-Append to `data/thoughts.json` and rebuild. Ids are the array position, so add to the end —
-never insert into the middle, or existing links will point at the wrong thought.
+Append to `data/thoughts.json` and rebuild. Ids are the array position, so add to the end.
+Never insert into the middle, or existing links will point at the wrong thought.
 
 ```json
 {
@@ -57,9 +56,9 @@ Or just use the `/add` page, which builds this for you and hands you the JSON.
 
 Three fields carry the site's meaning and should not be muddled:
 
-- **author** — who said it. Always a named person; the site does not carry anonymous or folk material.
-- **source** — where they said it. An essay, book, talk, letter or interview.
-- **contributor** — who put it on this site. Defaults to `curator` in `data/config.json`.
+- **author**: who said it. Always a named person; the site does not carry anonymous or folk material.
+- **source**: where they said it. An essay, book, talk, letter or interview.
+- **contributor**: who put it on this site. Defaults to `curator` in `data/config.json`.
 
 `text` may contain blank lines; they render as paragraph breaks inside the quote. Straight
 quotes and apostrophes are converted to typographic ones at build time, so you can type them
@@ -82,7 +81,7 @@ static/css/              stylesheet
 static/js/               search, random thought, add-a-thought (site works without them)
 check.py                 link / duplicate / attribution validator
 static/img/              favicon, about-page image
-site/                    generated output — do not edit
+site/                    generated output, do not edit
 ```
 
 ## Translations
@@ -99,12 +98,12 @@ directory-index URLs (`/t/12/index.html` served at `/t/12`) work with no configu
 ## Contributions
 
 `/add` is the whole flow. Someone types the thought, sees exactly how it will look, and gets three
-ways to send it — all of which produce the same JSON entry:
+ways to send it. All three produce the same JSON entry:
 
-1. **open a pull request** — a prefilled GitHub issue. Set `"repo": "you/startupthoughts"` in
+1. **open a pull request**: a prefilled GitHub issue. Set `"repo": "you/startupthoughts"` in
    `data/config.json` and the button appears.
-2. **copy the entry** — to the clipboard, ready to paste.
-3. **download it** — as a `.json` file.
+2. **copy the entry**: to the clipboard, ready to paste.
+3. **download it**: as a `.json` file.
 
 Nothing is sent anywhere without a click, and there is no account, no backend, and no tracking.
 

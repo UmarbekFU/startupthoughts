@@ -119,7 +119,7 @@ DEFAULT_STRINGS = {
     "collected_from": "thoughts from",
     "added_by_page": "thoughts added by",
     "notfound_body": "That thought isn\u2019t here.",
-    "meta_home": "A quiet place to think about startups \u2014 a collection of the best thoughts on building things, from the people who built them.",
+    "meta_home": "Quotes about building companies, each one attributed to a named person and linked to its source.",
 }
 
 LOCALES = OrderedDict([
@@ -174,7 +174,7 @@ class Site:
         self.author_id = self._ids(self.authors)
         self.source_id = self._ids(self.sources)
         self.contributor_id = self._ids(self.contributors)
-        # first thought each contributor added — breaks ties on the board
+        # first thought each contributor added; breaks ties on the board
         self.first_seen = {n: min(t["id"] for t in ts)
                            for n, ts in self.contributors.items()}
 
@@ -412,11 +412,11 @@ class Renderer:
         for name, ts in site.authors.items():
             aid = site.author_id[name]
             write(self._f("/author/%d" % aid), self.page(
-                "author", "%s \u2014 %s" % (name, s["site_name"]), "/author/%d" % aid,
+                "author", "%s \u00b7 %s" % (name, s["site_name"]), "/author/%d" % aid,
                 "<h1>%s</h1>\n%s" % (esc(name), self.quote_list(ts)),
                 "%s %s" % (s["by"], name)))
 
-        # contributors index — the people who added them
+        # contributors index: the people who added them
         write(self._f("/contributors"), self.page(
             "contributors", s["title_contributors"], "/contributors",
             '<h1>%s</h1>\n%s\n' % (esc(s["title_contributors"]),
@@ -425,7 +425,7 @@ class Renderer:
         for name, ts in site.contributors.items():
             cid = site.contributor_id[name]
             write(self._f("/contributor/%d" % cid), self.page(
-                "contributor", "%s \u2014 %s" % (name, s["site_name"]), "/contributor/%d" % cid,
+                "contributor", "%s \u00b7 %s" % (name, s["site_name"]), "/contributor/%d" % cid,
                 "<h1>%s</h1>\n%s" % (esc(name), self.quote_list(ts)),
                 "%s %s" % (s["added_by_page"], name)))
 
@@ -481,9 +481,9 @@ location.replace(base+"/t/"+ids[Math.floor(Math.random()*ids.length)]);
         return (p + "/index.html") if p else "index.html"
 
     def contribute_callout(self):
-        return ('<p class="callout">Everything here was put here by somebody. '
-                '<a href="%s"><strong>Add a thought</strong></a> \u2014 it takes about a minute, '
-                'and you need no account.</p>' % self.u("/add"))
+        return ('<p class="callout">Someone added every thought on this site. '
+                '<a href="%s"><strong>Add one</strong></a>. It takes a minute and '
+                'needs no account.</p>' % self.u("/add"))
 
     def leaderboard(self):
         """A standings board. Rank is your count, and nothing else."""
@@ -542,9 +542,8 @@ location.replace(base+"/t/"+ids[Math.floor(Math.random()*ids.length)]);
 """ % {"standing": standing} + """
 
 <p>
-One rule: it has to be something a real person really said or wrote, and you have to know where.
-A line everyone repeats but nobody can source does not go in. That rule is the only reason this
-collection is worth reading.
+It has to be something a real person said or wrote, and you have to know where. Lines that
+everyone repeats but nobody can source do not go in.
 </p>
 
 <form id="addform" data-repo="%(repo)s" autocomplete="off">
@@ -556,7 +555,7 @@ collection is worth reading.
 
 <label for="f_original">the original, if it was not said in English <em>(optional)</em></label>
 <input type="text" id="f_original" name="original"
-	placeholder="Mehnat \u2014 baxt keltirar">
+	placeholder="the Russian or Uzbek it was said in">
 
 <label for="f_author">who said it</label>
 <input type="text" id="f_author" name="author" required
@@ -597,32 +596,22 @@ collection is worth reading.
             return self.s["about"]
         return """<img src="/img/portrait.svg" alt="" width="200">
 <p>
-StartupThoughts is a collection of the best things ever said about starting things.
+StartupThoughts collects what people have said about building companies.
 </p><p>
-Every founder works mostly in the dark. The people in here worked in the same dark, and a few of
-them wrote down what they found. When you are stuck, one good sentence from someone who has been
-stuck in the same place is worth more than a whole shelf of advice.
+Every line names who said it and where it came from, with a link out to the source. Most run to a
+sentence or two. If you find something misattributed, tell me and I will fix it.
 </p><p>
-So this is a quiet place. No feed, no scores, no comments, no popups, no tracking. One thought at
-a time, big enough to read, with a link back to wherever it actually came from.
+Much of it comes from Central Asia rather than Silicon Valley: founders working now in Tashkent
+and Almaty, and older writers from Bukhara and Khorezm who were blunt about work and money. Where
+a line was not said in English, the original sits underneath the translation.
 </p><p>
-Every quote here is attributed to a real person and traced to a real source \u2014 an essay, a book, a
-talk, a letter, an interview. If you find something misattributed, that is a bug, and it should be
-fixed.
-</p><p>
-Much of it comes from closer to home than the usual Silicon Valley canon: the scholars of Bukhara
-and Khorezm who worked out how to think carefully about the world, poets like Navoi and Abai who
-were unusually blunt about work and money, and founders building in Tashkent, Almaty and Bishkek
-today. Where a line was not said in English, the original is printed underneath.
-</p><p>
-The best way to use it is to press <a href="%s">random thought</a> until one of them lands.
+Press <a href="%s">random thought</a> until something useful comes up.
 </p><p>
 Anyone can <a href="%s">add a thought</a>. It takes a minute and needs no account.
 </p><p>
-StartupThoughts is a totally free non-commercial site, here only for your inspiration.
-</p><p>
-It is modelled on <a href="https://musicthoughts.com/" rel="noopener">MusicThoughts</a>, Derek
-Sivers\u2019 quiet place to think about music, which has been doing this since 1999.
+The site is free and carries no advertising or tracking. It copies
+<a href="https://musicthoughts.com/" rel="noopener">musicthoughts.com</a>, which Derek Sivers has
+run since 1999.
 </p>""" % (self.u("/random"), self.u("/add"))
 
 

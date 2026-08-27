@@ -1,4 +1,4 @@
-/* StartupThoughts — two small enhancements, both optional.
+/* StartupThoughts: two small enhancements, both optional.
    Everything on the site works with JavaScript switched off. */
 (function () {
 	"use strict";
@@ -104,7 +104,7 @@
 })();
 
 /* ------------------------------------------------------------------
-   add a thought — builds the entry, previews it, and hands it off.
+   add a thought: builds the entry, previews it, and hands it off.
    No backend, no account, nothing sent anywhere without a click.
    ------------------------------------------------------------------ */
 (function () {
@@ -128,7 +128,7 @@
 
 	/* same typography the build step applies, so the preview does not lie */
 	function smarten(s) {
-		return s.replace(/--/g, "—")
+		return s
 			.replace(/(\w)'(\w)/g, "$1’$2")
 			.replace(/(^|[\s(\[])"/g, "$1“").replace(/"/g, "”")
 			.replace(/(^|[\s(\[])'/g, "$1‘").replace(/'/g, "’");
@@ -165,7 +165,7 @@
 			p[0].classList.toggle("bad", !p[0].value.trim());
 			if (!p[0].value.trim()) bad.push(p[1]);
 		});
-		if (strip(text.value).length > 400) bad.push("something shorter — 400 characters is the ceiling");
+		if (strip(text.value).length > 400) bad.push("something shorter. 400 characters is the ceiling");
 		return bad;
 	}
 
@@ -195,7 +195,7 @@
 		if (repo) {
 			actPr.hidden = false;
 			actPr.href = "https://github.com/" + repo + "/issues/new?" +
-				"title=" + encodeURIComponent("thought: " + d.author + " — " + d.text.slice(0, 50)) +
+				"title=" + encodeURIComponent("thought: " + d.author + ": " + d.text.slice(0, 50)) +
 				"&body=" + encodeURIComponent(
 					"Add this to `data/thoughts.json`:\n\n```json\n" + json + "\n```\n\n" +
 					(d.source_url ? "Source: " + d.source_url + "\n" : ""));
@@ -210,11 +210,11 @@
 			if (navigator.clipboard && navigator.clipboard.writeText) {
 				navigator.clipboard.writeText(json).then(done, function () {
 					window.getSelection().selectAllChildren(jsonBox);
-					note.textContent = "Selected below — press ⌘C / Ctrl-C.";
+					note.textContent = "Selected below. Press ⌘C or Ctrl-C.";
 				});
 			} else {
 				window.getSelection().selectAllChildren(jsonBox);
-				note.textContent = "Selected below — press ⌘C / Ctrl-C.";
+				note.textContent = "Selected below. Press ⌘C or Ctrl-C.";
 			}
 		};
 
