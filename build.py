@@ -152,7 +152,8 @@ class Site:
         for t in thoughts:
             self.authors.setdefault(t["author"], []).append(t)
             self.sources.setdefault(t["source"], []).append(t)
-            self.contributors.setdefault(t["contributor"], []).append(t)
+            if t["contributor"]:
+                self.contributors.setdefault(t["contributor"], []).append(t)
 
         self.author_id = self._ids(self.authors)
         self.source_id = self._ids(self.sources)
@@ -329,12 +330,16 @@ class Renderer:
         author_href = self.u("/author/%d" % self.site.author_id[t["author"]])
         if standalone:
             src_href = self.u("/source/%d" % self.site.source_id[t["source"]])
-            con_href = self.u("/contributor/%d" % self.site.contributor_id[t["contributor"]])
             out = ' <a href="%s" rel="nofollow noopener" target="_blank">\u2197</a>' % esc(
                 t["source_url"]) if t.get("source_url") else ""
-            foot = '\n\t<footer>%s <a href="%s">%s</a>%s &middot; %s <a href="%s">%s</a></footer>' % (
-                esc(self.s["from"]), src_href, esc(t["source"]), out,
-                esc(self.s["added_by"]), con_href, esc(t["contributor"]))
+            credit = ""
+            if t["contributor"]:
+                credit = ' &middot; %s <a href="%s">%s</a>' % (
+                    esc(self.s["added_by"]),
+                    self.u("/contributor/%d" % self.site.contributor_id[t["contributor"]]),
+                    esc(t["contributor"]))
+            foot = '\n\t<footer>%s <a href="%s">%s</a>%s%s</footer>' % (
+                esc(self.s["from"]), src_href, esc(t["source"]), out, credit)
             return """<blockquote>
 	<q>%s</q>%s
 	<cite><a href="%s">%s</a></cite>%s
@@ -418,7 +423,7 @@ class Renderer:
         write(self._f("/contributors"), self.page(
             "contributors", s["title_contributors"], "/contributors",
             '<h1>%s</h1>\n%s\n' % (esc(s["title_contributors"]),
-                                    self.leaderboard(CONFIG.get("curator", "StartupThoughts")))))
+                                    self.leaderboard())))
 
         for name, ts in site.contributors.items():
             cid = site.contributor_id[name]
@@ -483,22 +488,16 @@ location.replace(base+"/t/"+ids[Math.floor(Math.random()*ids.length)]);
                 '<a href="%s"><strong>Add a thought</strong></a> \u2014 it takes about a minute, '
                 'and you need no account.</p>' % self.u("/add"))
 
-    def leaderboard(self, curator):
+    def leaderboard(self):
         """A standings board. Rank is your count, and nothing else."""
         rows = self.site.board()
         top = len(rows[0][1]) if rows else 0
 
-        out = [
-            '<p class="callout">Rank is your count, and nothing else. No money, no '
-            'account, no waiting list. The only currency here is thoughts that check '
-            'out. <a href="%s"><strong>Add one</strong></a> and you are on the board.</p>'
-            % self.u("/add")
-        ]
+        out = []
 
         if not rows:
-            out.append('<p class="hint">Nobody is on the board yet. '
-                       '<a href="%s">First one takes it.</a></p>' % self.u("/add"))
-            return "\n".join(out)
+            return ('<p class="hint">Nobody is on the board yet. '
+                    '<a href="%s">First one takes it.</a></p>' % self.u("/add"))
 
         out.append('<ol class="board">')
         for i, (name, ts) in enumerate(rows):
@@ -510,11 +509,7 @@ location.replace(base+"/t/"+ids[Math.floor(Math.random()*ids.length)]);
                 need = len(rows[i - 1][1]) - n + 1
                 note = ("%d to pass %s" % (need, esc(rows[i - 1][0]))) if need > 0 \
                     else "tied, %s got there first" % esc(rows[i - 1][0])
-            cls = " ".join(filter(None, [
-                "place",
-                "p%d" % place if place <= 3 else "",
-                "seed" if name == curator else "",
-            ]))
+            cls = "place" + (" p%d" % place if place <= 3 else "")
             out.append(
                 '\t<li class="%s">'
                 '<span class="rank">%d</span>'
@@ -662,8 +657,7 @@ def load_thoughts(lang):
             "source_url": (t.get("source_url") or "").strip(),
             "original": (t.get("original") or "").strip(),
             "original_lang": (t.get("original_lang") or "uz").strip(),
-            "contributor": smarten((t.get("contributor") or "").strip()
-                                   or CONFIG.get("curator", "StartupThoughts")),
+            "contributor": smarten((t.get("contributor") or "").strip()),
         })
     return out
 
