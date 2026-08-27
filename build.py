@@ -158,6 +158,15 @@ class Site:
         self.author_id = self._ids(self.authors)
         self.source_id = self._ids(self.sources)
         self.contributor_id = self._ids(self.contributors)
+        # first thought each contributor added — breaks ties on the board
+        self.first_seen = {n: min(t["id"] for t in ts)
+                           for n, ts in self.contributors.items()}
+
+    def board(self, curator):
+        """Contributors ranked by count. The seed collection does not compete."""
+        rows = [(n, ts) for n, ts in self.contributors.items() if n != curator]
+        rows.sort(key=lambda kv: (-len(kv[1]), self.first_seen[kv[0]]))
+        return rows
 
     @staticmethod
     def _ids(group):
@@ -407,15 +416,10 @@ class Renderer:
                 "%s %s" % (s["collected_from"], name)))
 
         # contributors index — the people who added them
-        rows = "\n".join(
-            '\n\t<li><a href="%s">%s</a> <small>(%d)</small></li>\n'
-            % (self.u("/contributor/%d" % site.contributor_id[n]), esc(n), len(ts))
-            for n, ts in site.top_contributors()
-        )
         write(self._f("/contributors"), self.page(
             "contributors", s["title_contributors"], "/contributors",
-            '<h1>%s</h1>\n%s\n<ul class="linklist">\n%s</ul>\n'
-            % (esc(s["title_contributors"]), self.contribute_callout(), rows)))
+            '<h1>%s</h1>\n%s\n' % (esc(s["title_contributors"]),
+                                    self.leaderboard(CONFIG.get("curator", "StartupThoughts")))))
 
         for name, ts in site.contributors.items():
             cid = site.contributor_id[name]
@@ -478,6 +482,57 @@ location.replace(base+"/t/"+(1+Math.floor(Math.random()*n)));
         return ('<p class="callout">Everything here was put here by somebody. '
                 '<a href="%s"><strong>Add a thought</strong></a> \u2014 it takes about a minute, '
                 'and you need no account.</p>' % self.u("/add"))
+
+    def leaderboard(self, curator):
+        """A standings table. Rank is your count, and nothing else."""
+        rows = self.site.board(curator)
+        s = self.s
+        out = [
+            '<p class="callout">Rank is your count, and nothing else. '
+            'No money, no account, no waiting list \u2014 the only currency here is '
+            'thoughts that check out. <a href="%s"><strong>Add one</strong></a> and you '
+            'are on the board.</p>' % self.u("/add")
+        ]
+
+        if not rows:
+            out.append('<p class="hint">Nobody is on the board yet. '
+                       '<a href="%s">First one takes the top spot.</a></p>'
+                       % self.u("/add"))
+        else:
+            out.append('<ol class="board">')
+            for i, (name, ts) in enumerate(rows):
+                n = len(ts)
+                gap = ""
+                if i:
+                    above = len(rows[i - 1][1])
+                    need = above - n + 1
+                    gap = ('<span class="gap">%d to pass %s</span>'
+                           % (need, esc(rows[i - 1][0]))) if need > 0 else \
+                          '<span class="gap">tied \u2014 %s got there first</span>' % esc(rows[i - 1][0])
+                else:
+                    gap = '<span class="gap gap-top">holding first</span>'
+                out.append(
+                    '\t<li%s><span class="rank">%d</span>'
+                    '<a class="who" href="%s">%s</a>'
+                    '<span class="count">%d</span>%s</li>'
+                    % (' class="first"' if not i else "", i + 1,
+                       self.u("/contributor/%d" % self.site.contributor_id[name]),
+                       esc(name), n, gap))
+            out.append("</ol>")
+
+        # the house account, shown but outside the ranks
+        if curator in self.site.contributors:
+            n = len(self.site.contributors[curator])
+            out.append(
+                '<h2 class="seedhead">%s</h2>\n'
+                '<p class="seed"><a href="%s">%s</a> <span class="count">%d</span></p>\n'
+                '<p class="hint">The collection this site opened with. It sits outside the '
+                'ranking, so the board is a contest between people rather than a race '
+                'against the archive.</p>'
+                % (esc(s.get("seed_head", "the seed collection")),
+                   self.u("/contributor/%d" % self.site.contributor_id[curator]),
+                   esc(curator), n))
+        return "\n".join(out)
 
     def add_body(self):
         if self.lang != "en" and "add" in self.s:

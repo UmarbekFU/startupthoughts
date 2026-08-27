@@ -150,34 +150,57 @@ def interleave(entries):
     return out
 
 
+def load_existing():
+    """Whatever is already published. Its ids are permanent — they are live URLs."""
+    path = os.path.join(DATA, "thoughts.json")
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+    return raw.get("thoughts", raw) if isinstance(raw, dict) else raw
+
+
 def main():
     paths = sys.argv[1:]
     if not paths:
         paths = sorted(glob.glob(os.path.join(SESSION, "*", "journal.jsonl")))
     if not paths:
         sys.exit("no workflow journals found — pass paths explicitly")
-    print("reading %d file(s)" % len(paths))
+
+    existing = load_existing()
+    print("reading %d file(s); %d thoughts already published" % (len(paths), len(existing)))
 
     pool = collect(paths)
-    print("  %d raw quotes" % len(pool))
+    print("  %d raw quotes from research" % len(pool))
 
-    entries, stats = clean(pool)
+    fresh, stats = clean(pool)
+
+    # never re-publish something already here, and never renumber what is
+    # already here: /t/12 must always be the same thought.
+    have = {" ".join(fold(e["text"]).split()[:9]) for e in existing}
+    added = [e for e in fresh if " ".join(fold(e["text"]).split()[:9]) not in have]
+    stats["already published"] = len(fresh) - len(added)
+
     for reason, n in stats.most_common():
-        print("  dropped %-22s %d" % (reason, n))
+        if n:
+            print("  dropped %-22s %d" % (reason, n))
 
-    entries = interleave(entries)
-    for i, e in enumerate(entries, 1):
-        e["id"] = i
+    next_id = max([e.get("id", 0) for e in existing] or [0]) + 1
+    for e in interleave(added):
+        e["id"] = next_id
+        next_id += 1
+
+    entries = existing + added
 
     out = os.path.join(DATA, "thoughts.json")
     with open(out, "w", encoding="utf-8") as f:
         json.dump({"thoughts": entries}, f, ensure_ascii=False, indent=1)
 
     authors = Counter(e["author"] for e in entries)
-    print("\n  kept %d thoughts, %d authors, %d sources"
-          % (len(entries), len(authors), len({e["source"] for e in entries})))
-    print("  %d carry an original-language line"
-          % sum(1 for e in entries if e.get("original")))
+    print("\n  added %d new, %d thoughts total" % (len(added), len(entries)))
+    print("  %d authors, %d sources, %d with an original-language line"
+          % (len(authors), len({e["source"] for e in entries}),
+             sum(1 for e in entries if e.get("original"))))
     print("  top voices: " + ", ".join("%s (%d)" % kv for kv in authors.most_common(6)))
     print("  -> %s" % out)
 

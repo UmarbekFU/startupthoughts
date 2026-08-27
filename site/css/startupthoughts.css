@@ -144,3 +144,72 @@ a.bigbutton[hidden] { display: none; }
 
 /* --- search results --- */
 #results p { font-family: sans-serif; font-size: 1.05em; color: #555; }
+
+/* --- the contributor board: rank is your count, nothing else --- */
+ol.board {
+	list-style: none;
+	padding: 0;
+	margin: 1.5em 0;
+	counter-reset: none;
+}
+ol.board li {
+	display: grid;
+	grid-template-columns: 2.5em 1fr auto;
+	grid-template-areas: "rank who count" ". gap gap";
+	align-items: baseline;
+	gap: 0 0.5em;
+	padding: 0.6em 0.4em;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 0;
+}
+ol.board li.first {
+	background-color: #eee;
+	border-bottom-color: #d4d4d4;
+}
+ol.board .rank {
+	grid-area: rank;
+	font-size: 1.4em;
+	color: #999;
+	font-variant-numeric: tabular-nums;
+}
+ol.board li.first .rank { color: #900; }
+ol.board .who {
+	grid-area: who;
+	font-size: 1.5em;
+}
+ol.board li.first .who { font-weight: bold; }
+ol.board .count {
+	grid-area: count;
+	font-size: 1.5em;
+	color: #222;
+	font-variant-numeric: tabular-nums;
+}
+ol.board .gap {
+	grid-area: gap;
+	font-family: sans-serif;
+	font-size: 0.85em;
+	color: #777;
+}
+ol.board .gap-top { color: #900; }
+
+h2.seedhead {
+	font-size: 1.2em;
+	margin-top: 2em;
+	color: #666;
+	font-weight: normal;
+}
+p.seed {
+	font-size: 1.5em;
+	margin: 0.3em 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	color: #666;
+}
+p.seed a { color: #900; }
+p.seed .count { color: #666; font-variant-numeric: tabular-nums; }
+
+@media (max-width: 30em) {
+	ol.board li { grid-template-columns: 2em 1fr auto; }
+	ol.board .who, ol.board .count { font-size: 1.2em; }
+}
