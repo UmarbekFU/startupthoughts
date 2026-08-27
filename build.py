@@ -50,7 +50,6 @@ def slugify(s):
 
 def smarten(s):
     """Curly quotes / dashes, the way a serif typographic site wants them."""
-    s = s.replace("--", "\u2014")
     s = re.sub(r"(?<=\w)'(?=\w)", "\u2019", s)          # don't -> don’t
     s = re.sub(r'(^|[\s(\[])"', "\\1\u201c", s)          # opening "
     s = s.replace('"', "\u201d")                          # closing "
@@ -162,9 +161,9 @@ class Site:
         self.first_seen = {n: min(t["id"] for t in ts)
                            for n, ts in self.contributors.items()}
 
-    def board(self, curator):
-        """Contributors ranked by count. The seed collection does not compete."""
-        rows = [(n, ts) for n, ts in self.contributors.items() if n != curator]
+    def board(self):
+        """Everyone, ranked by count. Ties go to whoever got there first."""
+        rows = list(self.contributors.items())
         rows.sort(key=lambda kv: (-len(kv[1]), self.first_seen[kv[0]]))
         return rows
 
@@ -458,12 +457,13 @@ class Renderer:
         write(self._f("/random"), """<!doctype html>
 <html lang="%s"><head><meta charset="utf-8"><title>%s</title>
 <script>
-var base=%s, n=%d;
-location.replace(base+"/t/"+(1+Math.floor(Math.random()*n)));
+var base=%s, ids=%s;
+location.replace(base+"/t/"+ids[Math.floor(Math.random()*ids.length)]);
 </script>
 <meta http-equiv="refresh" content="0;url=%s"></head>
 <body></body></html>
-""" % (self.lang, esc(s["nav_random"]), json.dumps(self.base), len(site.thoughts),
+""" % (self.lang, esc(s["nav_random"]), json.dumps(self.base),
+       json.dumps([t["id"] for t in site.thoughts]),
        self.u("/t/%d" % self.rng.choice(site.thoughts)["id"])))
 
         # search index
@@ -484,61 +484,70 @@ location.replace(base+"/t/"+(1+Math.floor(Math.random()*n)));
                 'and you need no account.</p>' % self.u("/add"))
 
     def leaderboard(self, curator):
-        """A standings table. Rank is your count, and nothing else."""
-        rows = self.site.board(curator)
-        s = self.s
+        """A standings board. Rank is your count, and nothing else."""
+        rows = self.site.board()
+        top = len(rows[0][1]) if rows else 0
+
         out = [
-            '<p class="callout">Rank is your count, and nothing else. '
-            'No money, no account, no waiting list \u2014 the only currency here is '
-            'thoughts that check out. <a href="%s"><strong>Add one</strong></a> and you '
-            'are on the board.</p>' % self.u("/add")
+            '<p class="callout">Rank is your count, and nothing else. No money, no '
+            'account, no waiting list. The only currency here is thoughts that check '
+            'out. <a href="%s"><strong>Add one</strong></a> and you are on the board.</p>'
+            % self.u("/add")
         ]
 
         if not rows:
             out.append('<p class="hint">Nobody is on the board yet. '
-                       '<a href="%s">First one takes the top spot.</a></p>'
-                       % self.u("/add"))
-        else:
-            out.append('<ol class="board">')
-            for i, (name, ts) in enumerate(rows):
-                n = len(ts)
-                gap = ""
-                if i:
-                    above = len(rows[i - 1][1])
-                    need = above - n + 1
-                    gap = ('<span class="gap">%d to pass %s</span>'
-                           % (need, esc(rows[i - 1][0]))) if need > 0 else \
-                          '<span class="gap">tied \u2014 %s got there first</span>' % esc(rows[i - 1][0])
-                else:
-                    gap = '<span class="gap gap-top">holding first</span>'
-                out.append(
-                    '\t<li%s><span class="rank">%d</span>'
-                    '<a class="who" href="%s">%s</a>'
-                    '<span class="count">%d</span>%s</li>'
-                    % (' class="first"' if not i else "", i + 1,
-                       self.u("/contributor/%d" % self.site.contributor_id[name]),
-                       esc(name), n, gap))
-            out.append("</ol>")
+                       '<a href="%s">First one takes it.</a></p>' % self.u("/add"))
+            return "\n".join(out)
 
-        # the house account, shown but outside the ranks
-        if curator in self.site.contributors:
-            n = len(self.site.contributors[curator])
+        out.append('<ol class="board">')
+        for i, (name, ts) in enumerate(rows):
+            n = len(ts)
+            place = i + 1
+            if i == 0:
+                note = "holding first"
+            else:
+                need = len(rows[i - 1][1]) - n + 1
+                note = ("%d to pass %s" % (need, esc(rows[i - 1][0]))) if need > 0 \
+                    else "tied, %s got there first" % esc(rows[i - 1][0])
+            cls = " ".join(filter(None, [
+                "place",
+                "p%d" % place if place <= 3 else "",
+                "seed" if name == curator else "",
+            ]))
             out.append(
-                '<h2 class="seedhead">%s</h2>\n'
-                '<p class="seed"><a href="%s">%s</a> <span class="count">%d</span></p>\n'
-                '<p class="hint">The collection this site opened with. It sits outside the '
-                'ranking, so the board is a contest between people rather than a race '
-                'against the archive.</p>'
-                % (esc(s.get("seed_head", "the seed collection")),
-                   self.u("/contributor/%d" % self.site.contributor_id[curator]),
-                   esc(curator), n))
+                '\t<li class="%s">'
+                '<span class="rank">%d</span>'
+                '<a class="who" href="%s">%s</a>'
+                '<span class="count">%d</span>'
+                '<span class="note">%s</span>'
+                "</li>" % (cls, place,
+                           self.u("/contributor/%d" % self.site.contributor_id[name]),
+                           esc(name), n, note))
+        out.append("</ol>")
+
+        out.append(
+            '<p class="totake">To take first place you need <strong>%d</strong>. '
+            '<a href="%s">Start.</a></p>' % (top + 1, self.u("/add")))
         return "\n".join(out)
 
     def add_body(self):
         if self.lang != "en" and "add" in self.s:
             return self.s["add"]
         repo = CONFIG.get("repo", "")
+        rows = self.site.board()
+        standing = ""
+        if rows:
+            leader, ts = rows[0]
+            standing = (
+                '<p class="callout">First place is <a href="%s"><strong>%s</strong></a> '
+                'with %d. You need <strong>%d</strong> to take it. '
+                '<a href="%s">See the board.</a></p>\n'
+                % (self.u("/contributor/%d" % self.site.contributor_id[leader]),
+                   esc(leader), len(ts), len(ts) + 1, self.u("/contributors")))
         return """<h1>add a thought</h1>
+%(standing)s
+""" % {"standing": standing} + """
 
 <p>
 One rule: it has to be something a real person really said or wrote, and you have to know where.

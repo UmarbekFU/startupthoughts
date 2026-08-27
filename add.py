@@ -62,6 +62,8 @@ def validate(e, existing):
             "sentence that carries the idea." % (len(e["text"]), MAX_LEN))
     if len(e["text"]) < 12:
         die("that is too short to be a thought.")
+    if "\u2014" in e["text"] or "\u2013" in e["text"]:
+        die("that has a dash in it. Use a comma, colon or full stop instead.")
     if re.search(r"\b(proverb|saying|folk|anonymous|unknown|traditional)\b",
                  e["author"], re.I):
         die("every thought here is by a named person. “%s” is not a name."

@@ -73,6 +73,9 @@ for i, t in enumerate(thoughts, 1):
         problems.append("thought %d (%s) has no source" % (i, t.get("author")))
     if len(t["text"]) > 320:
         problems.append("thought %d (%s) is %d chars — too long" % (i, t["author"], len(t["text"])))
+    if "\u2014" in t["text"] or "\u2013" in t["text"]:
+        problems.append("thought %d (%s) contains a dash: %s"
+                        % (i, t["author"], t["text"][:60]))
     if t["text"].strip()[:1] in ('"', "“"):
         problems.append("thought %d (%s) is wrapped in quote marks" % (i, t["author"]))
     if t.get("contributor") is not None and not str(t.get("contributor", "")).strip():

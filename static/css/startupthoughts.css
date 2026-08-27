@@ -150,66 +150,80 @@ ol.board {
 	list-style: none;
 	padding: 0;
 	margin: 1.5em 0;
-	counter-reset: none;
+	border-top: 2px solid #222;
 }
-ol.board li {
+ol.board li.place {
 	display: grid;
-	grid-template-columns: 2.5em 1fr auto;
-	grid-template-areas: "rank who count" ". gap gap";
+	grid-template-columns: 2.2em 1fr auto;
+	grid-template-areas: "rank who count" ". note note";
 	align-items: baseline;
-	gap: 0 0.5em;
-	padding: 0.6em 0.4em;
-	border-bottom: 1px solid #e2e2e2;
-	margin-bottom: 0;
+	gap: 0.1em 0.6em;
+	padding: 0.7em 0.5em;
+	border-bottom: 1px solid #ddd;
+	margin: 0;
 }
-ol.board li.first {
-	background-color: #eee;
-	border-bottom-color: #d4d4d4;
-}
+
 ol.board .rank {
 	grid-area: rank;
-	font-size: 1.4em;
-	color: #999;
+	font-size: 1.6em;
+	line-height: 1;
+	color: #bbb;
 	font-variant-numeric: tabular-nums;
+	text-align: right;
 }
-ol.board li.first .rank { color: #900; }
-ol.board .who {
-	grid-area: who;
-	font-size: 1.5em;
-}
-ol.board li.first .who { font-weight: bold; }
+ol.board .who  { grid-area: who; font-size: 1.5em; }
 ol.board .count {
 	grid-area: count;
 	font-size: 1.5em;
-	color: #222;
 	font-variant-numeric: tabular-nums;
 }
-ol.board .gap {
-	grid-area: gap;
+ol.board .note {
+	grid-area: note;
 	font-family: sans-serif;
-	font-size: 0.85em;
-	color: #777;
+	font-size: 0.82em;
+	color: #888;
 }
-ol.board .gap-top { color: #900; }
 
-h2.seedhead {
-	font-size: 1.2em;
-	margin-top: 2em;
-	color: #666;
-	font-weight: normal;
+/* the podium reads at a glance */
+ol.board li.p1 {
+	background-color: #eee;
+	border-bottom-color: #bbb;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
-p.seed {
-	font-size: 1.5em;
-	margin: 0.3em 0;
-	display: flex;
-	justify-content: space-between;
-	max-width: 100%;
-	color: #666;
+ol.board li.p1 .rank  { color: #900; font-size: 2.2em; font-weight: bold; }
+ol.board li.p1 .who   { font-size: 1.9em; font-weight: bold; }
+ol.board li.p1 .count { font-size: 1.9em; font-weight: bold; }
+ol.board li.p1 .note  { color: #900; }
+
+ol.board li.p2 .rank, ol.board li.p3 .rank { color: #666; font-size: 1.9em; }
+ol.board li.p2 .who,  ol.board li.p3 .who  { font-size: 1.7em; }
+ol.board li.p2 .count, ol.board li.p3 .count { font-size: 1.7em; }
+
+/* the seed collection is labelled, but it still has to be beaten */
+ol.board li.seed .who:after {
+	content: " (the archive)";
+	font-family: sans-serif;
+	font-size: 0.5em;
+	color: #888;
+	white-space: nowrap;
 }
-p.seed a { color: #900; }
-p.seed .count { color: #666; font-variant-numeric: tabular-nums; }
+
+p.totake {
+	font-family: sans-serif;
+	font-size: 1.15em;
+	background-color: #eee;
+	padding: 0.85em;
+	margin-top: 1.5em;
+}
+p.totake strong { font-size: 1.25em; color: #900; }
 
 @media (max-width: 30em) {
-	ol.board li { grid-template-columns: 2em 1fr auto; }
+	ol.board li.place { grid-template-columns: 1.8em 1fr auto; }
 	ol.board .who, ol.board .count { font-size: 1.2em; }
+	ol.board li.p1 .who, ol.board li.p1 .count { font-size: 1.4em; }
+	ol.board li.p1 .rank { font-size: 1.8em; }
 }
+
+/* --- search results --- */
+#results p { font-family: sans-serif; font-size: 1.05em; color: #555; }
