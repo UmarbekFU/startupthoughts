@@ -58,6 +58,22 @@ def smarten(s):
     return s
 
 
+KAZAKH_LETTERS = set("\u04d9\u0493\u049b\u04a3\u04e9\u04b1\u04af\u04bb\u0456")
+
+
+def guess_lang(text):
+    """Tag the original in its own language, not whatever the default was.
+
+    Uzbek is written in Latin here, so any Cyrillic is Kazakh or Russian; the
+    letters above appear in Kazakh and not in Russian.
+    """
+    if not text:
+        return "uz"
+    if not any("\u0400" <= c <= "\u04ff" for c in text):
+        return "uz"
+    return "kk" if KAZAKH_LETTERS & set(text.lower()) else "ru"
+
+
 def body_html(text):
     """Paragraph breaks inside a quote render the way musicthoughts does them."""
     parts = [p.strip() for p in re.split(r"\n{2,}|\n", text) if p.strip()]
@@ -238,7 +254,6 @@ class Renderer:
         items = [
             (self.u("/new"), self.s["nav_new"], ""),
             (self.u("/authors"), self.s["nav_authors"], ""),
-            (self.u("/sources"), self.s["nav_sources"], ""),
             (self.u("/contributors"), self.s["nav_contributors"], ""),
             (self.u("/add"), self.s["nav_add"], ""),
             (self.u("/t/%d" % rnd), self.s["nav_random"], ' id="randomlink"'),
@@ -329,7 +344,6 @@ class Renderer:
     def quote_block(self, t, standalone=False):
         author_href = self.u("/author/%d" % self.site.author_id[t["author"]])
         if standalone:
-            src_href = self.u("/source/%d" % self.site.source_id[t["source"]])
             out = ' <a href="%s" rel="nofollow noopener" target="_blank">\u2197</a>' % esc(
                 t["source_url"]) if t.get("source_url") else ""
             credit = ""
@@ -338,19 +352,20 @@ class Renderer:
                     esc(self.s["added_by"]),
                     self.u("/contributor/%d" % self.site.contributor_id[t["contributor"]]),
                     esc(t["contributor"]))
-            foot = '\n\t<footer>%s <a href="%s">%s</a>%s%s</footer>' % (
-                esc(self.s["from"]), src_href, esc(t["source"]), out, credit)
+            foot = '\n\t<footer>%s %s%s%s</footer>' % (
+                esc(self.s["from"]), esc(t["source"]), out, credit)
             return """<blockquote>
 	<q>%s</q>%s
 	<cite><a href="%s">%s</a></cite>%s
 </blockquote>""" % (body_html(t["text"]), self.original_line(t),
                     author_href, esc(t["author"]), foot)
+        # No original-language line in list views: it doubles the weight of
+        # every entry and makes /new hard to scan. It stays on /t/<id>.
         href = self.u("/t/%d" % t["id"])
         return """<blockquote cite="%s">
-	<q>%s</q>%s
+	<q>%s</q>
 	<cite><a href="%s">%s</a></cite>
-</blockquote>""" % (href, body_html(t["text"]), self.original_line(t),
-                    href, esc(t["author"]))
+</blockquote>""" % (href, body_html(t["text"]), href, esc(t["author"]))
 
     def quote_list(self, thoughts):
         items = "\n".join("\n\t<li>%s\n\n</li>\n" % self.quote_block(t) for t in thoughts)
@@ -368,7 +383,6 @@ class Renderer:
             for h, l in [
                 (self.u("/new"), s["nav_new"]),
                 (self.u("/authors"), s["nav_authors"]),
-                (self.u("/sources"), s["nav_sources"]),
                 (self.u("/contributors"), s["nav_contributors"]),
                 (self.u("/add"), s["nav_add"]),
                 (self.u("/t/%d" % rnd), s["nav_random"]),
@@ -401,23 +415,6 @@ class Renderer:
                 "author", "%s \u2014 %s" % (name, s["site_name"]), "/author/%d" % aid,
                 "<h1>%s</h1>\n%s" % (esc(name), self.quote_list(ts)),
                 "%s %s" % (s["by"], name)))
-
-        # sources index — where the thoughts come from
-        rows = "\n".join(
-            '\n\t<li><a href="%s">%s</a> <small>(%d)</small></li>\n'
-            % (self.u("/source/%d" % site.source_id[n]), esc(n), len(ts))
-            for n, ts in site.top_sources()
-        )
-        write(self._f("/sources"), self.page(
-            "sources", s["title_sources"], "/sources",
-            '<h1>%s</h1>\n<ul class="linklist">\n%s</ul>\n' % (esc(s["title_sources"]), rows)))
-
-        for name, ts in site.sources.items():
-            sid = site.source_id[name]
-            write(self._f("/source/%d" % sid), self.page(
-                "source", "%s \u2014 %s" % (name, s["site_name"]), "/source/%d" % sid,
-                "<h1>%s</h1>\n%s" % (esc(name), self.quote_list(ts)),
-                "%s %s" % (s["collected_from"], name)))
 
         # contributors index — the people who added them
         write(self._f("/contributors"), self.page(
@@ -656,7 +653,8 @@ def load_thoughts(lang):
             "source": smarten(t["source"].strip()),
             "source_url": (t.get("source_url") or "").strip(),
             "original": (t.get("original") or "").strip(),
-            "original_lang": (t.get("original_lang") or "uz").strip(),
+            "original_lang": (t.get("original_lang") or guess_lang(
+                t.get("original") or "")).strip(),
             "contributor": smarten((t.get("contributor") or "").strip()),
         })
     return out
@@ -701,11 +699,10 @@ def main():
     for lang in available:
         b = LOCALES[lang]["base"]
         s2 = Site(load_thoughts(lang))
-        urls += [b + "/", b + "/new", b + "/authors", b + "/sources", b + "/contributors",
+        urls += [b + "/", b + "/new", b + "/authors", b + "/contributors",
                  b + "/add", b + "/search", b + "/about"]
         urls += [b + "/t/%d" % t["id"] for t in s2.thoughts]
         urls += [b + "/author/%d" % i for i in s2.author_id.values()]
-        urls += [b + "/source/%d" % i for i in s2.source_id.values()]
         urls += [b + "/contributor/%d" % i for i in s2.contributor_id.values()]
     write("sitemap.xml",
           '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
