@@ -35,6 +35,15 @@ def fold(s):
     return re.sub(r"[^a-z0-9 ]", "", s).strip()
 
 
+def undash(s):
+    """No dashes in quotes. A comma carries a parenthetical clause fine."""
+    s = re.sub(r"\s*[\u2014\u2013]\s*$", "", s)          # trailing dash: just drop it
+    s = re.sub(r"\s+[\u2014\u2013]\s+", ", ", s)          # spaced: becomes a comma
+    s = re.sub(r"(?<=\w)[\u2014\u2013](?=\w)", ", ", s)   # tight: same
+    s = re.sub(r"\s*[\u2014\u2013]\s*", ", ", s)          # anything left
+    return re.sub(r",\s*,", ",", s)
+
+
 def strip_wrapping(s):
     s = s.strip()
     while len(s) > 2 and s[0] in '"“«‘' and s[-1] in '"”»’':
@@ -73,7 +82,7 @@ def clean(pool):
     for q in pool:
         if not isinstance(q, dict):
             continue
-        text = strip_wrapping(str(q.get("text") or ""))
+        text = undash(strip_wrapping(str(q.get("text") or "")))
         author = str(q.get("author") or "").strip()
         source = str(q.get("source") or "").strip()
 
