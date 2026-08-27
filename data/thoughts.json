@@ -17,34 +17,12 @@
    "id": 2
   },
   {
-   "text": "In speech there is nothing so contemptible as a lie.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "So‘z aro yolg‘on kibi yo‘q nopisand",
-   "id": 3
-  },
-  {
-   "text": "If you say ‘I know,’ then you are far from knowledge, and among the wise you will be counted as foolish.",
-   "author": "Yusuf Balasaguni",
-   "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
-   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
-   "id": 4
-  },
-  {
    "text": "When mistakes are hidden, they breed new mistakes, or the problem gets worse. I allow mistakes, only not repeated ones.",
    "author": "Zafar Khashimov",
    "source": "Spot.uz interview, “Цена провала: Зафар Хашимов о том, как шесть лет закрывал City Taxi, почему не взлетел Five, своих ошибках и страхах” (11 August 2021)",
    "source_url": "https://www.spot.uz/ru/2021/08/11/zafar-khashimov/",
    "original": "Когда ошибки скрывают, это вызывает новые ошибки или усугубление проблемы. Я позволяю ошибаться, но только без повторов.",
    "id": 5
-  },
-  {
-   "text": "I read the Metaphysics forty times, until I had the text by heart, and still I did not understand it. Then a broker sold me a commentary for four dirhams, and at once the whole thing was clear.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "Autobiography, in Avicenna on Theology, trans. A. J. Arberry",
-   "source_url": "https://archive.org/details/in.gov.ignca.7274",
-   "id": 6
   },
   {
    "text": "I think failure is massively overrated.",
@@ -140,13 +118,6 @@
    "source": "Selected Aphorisms (Fusul al-Madani), aphorism 9",
    "source_url": "https://archive.org/details/AlfarabiSelectedAphorismsAndOtherTexts",
    "id": 19
-  },
-  {
-   "text": "When I considered what people generally want in calculating, I found that it always is a number.",
-   "author": "Al-Khwarizmi",
-   "source": "The Algebra of Mohammed ben Musa, c. 820, trans. Frederic Rosen, 1831",
-   "source_url": "https://archive.org/details/algebraofmohamme00khuwuoft",
-   "id": 20
   },
   {
    "text": "Business success contains the seeds of its own destruction. The more successful you are, the more people want a chunk of your business and then another chunk and then another until there is nothing left.",
@@ -320,13 +291,6 @@
    "id": 44
   },
   {
-   "text": "Fearlessness is not the absence of fear. Rather, it’s the mastery of fear.",
-   "author": "Arianna Huffington",
-   "source": "On Becoming Fearless",
-   "source_url": "https://www.readinggroupguides.com/reviews/on-becoming-fearless-in-love-work-and-life/excerpt",
-   "id": 45
-  },
-  {
    "text": "Enthusiastic skepticism is not the enemy of boundless optimism. It’s optimism’s perfect partner.",
    "author": "Astro Teller",
    "source": "The unexpected benefit of celebrating failure (TED2016)",
@@ -462,20 +426,6 @@
    "id": 64
   },
   {
-   "text": "We’ve got a two-step plan: to build one of the world’s most valuable companies and do the most good we can.",
-   "author": "Melanie Perkins",
-   "source": "SXSW Sydney, 2024",
-   "source_url": "https://www.startupdaily.net/topic/business/set-crazy-big-goals-and-make-them-happen-canva-cofounder-melanie-perkins-on-building-a-startup-giant/",
-   "id": 65
-  },
-  {
-   "text": "I’ve failed over and over and over again in my life. And that is why I succeed.",
-   "author": "Michael Jordan",
-   "source": "Nike “Failure” commercial, 1997",
-   "source_url": "https://www.youtube.com/watch?v=45mMioJ5szc",
-   "id": 66
-  },
-  {
    "text": "Wind extinguishes a candle and energizes fire. Likewise with randomness, uncertainty, chaos: you want to use them, not hide from them. You want to be the fire and wish for the wind.",
    "author": "Nassim Nicholas Taleb",
    "source": "Antifragile",
@@ -504,13 +454,6 @@
    "id": 70
   },
   {
-   "text": "The brick walls are there for a reason. The brick walls are not there to keep us out. The brick walls are there to give us a chance to show how badly we want something.",
-   "author": "Randy Pausch",
-   "source": "The Last Lecture: Really Achieving Your Childhood Dreams",
-   "source_url": "https://www.cs.cmu.edu/~pausch/Randy/pauschlastlecturetranscript.pdf",
-   "id": 71
-  },
-  {
    "text": "Pain + Reflection = Progress.",
    "author": "Ray Dalio",
    "source": "Principles",
@@ -523,13 +466,6 @@
    "source": "No Rules Rules: Netflix and the Culture of Reinvention",
    "source_url": "https://www.goodreads.com/work/quotes/74541588-no-rules-rules-netflix-and-the-culture-of-reinvention",
    "id": 73
-  },
-  {
-   "text": "We’re raising our girls to be perfect, and we’re raising our boys to be brave.",
-   "author": "Reshma Saujani",
-   "source": "Teach girls bravery, not perfection (TED2016)",
-   "source_url": "https://www.ted.com/talks/reshma_saujani_teach_girls_bravery_not_perfection/transcript",
-   "id": 74
   },
   {
    "text": "A flower is simply a weed with an advertising budget.",
@@ -619,34 +555,12 @@
    "id": 86
   },
   {
-   "text": "A single word turns aside a calamity that scattered treasure could not.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Bir so‘z etib oncha baliyatni daf’, / Kim, sochibon ganj yetishmay bu naf’.",
-   "id": 87
-  },
-  {
-   "text": "However much wisdom you possess, still seek to gain more; for the wise man attains his desire by inquiry.",
-   "author": "Yusuf Balasaguni",
-   "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
-   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
-   "id": 88
-  },
-  {
    "text": "The story of success and the story of mistakes are inseparable. A success story is exactly that: the story of a chain of mistakes.",
    "author": "Zafar Khashimov",
    "source": "Spot.uz, Alter Ego interview: “Зафар Хашимов: об инвестициях, монополиях, НДС и ценах, будущем Узбекистана и многом другом” (15 April 2019)",
    "source_url": "https://www.spot.uz/ru/2019/04/15/khashimov/",
    "original": "История успеха и история ошибок неразделимы. История успеха — это и есть история череды ошибок.",
    "id": 89
-  },
-  {
-   "text": "With each proof I examined, I set down the premisses and put them in order in a file, then examined what deductions might be drawn from them.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "Autobiography, in Avicenna on Theology, trans. A. J. Arberry",
-   "source_url": "https://archive.org/details/in.gov.ignca.7274",
-   "id": 90
   },
   {
    "text": "Brilliant thinking is rare, but courage is in even shorter supply than genius.",
@@ -682,14 +596,6 @@
    "source": "Santa Clara Valley Historical Association interview, 1994",
    "source_url": "https://archive.org/details/steve-jobs-secrets-of-life-ai-enhanced-enhanced",
    "id": 95
-  },
-  {
-   "text": "To the lazy man, even the shadow of a cloud is a burden.",
-   "author": "Mahmud al-Kashgari",
-   "source": "Dīwān Lughāt al-Turk, 1072–74 — Turkic proverb recorded by al-Kashgari",
-   "source_url": "https://dergipark.org.tr/tr/download/article-file/5482923",
-   "original": "Ermegüge bulit yük bolur",
-   "id": 96
   },
   {
    "text": "The customer doesn’t care what technology you use. The customer sees, feels, hears, and touches it with their hands.",
@@ -742,13 +648,6 @@
    "source": "Selected Aphorisms (Fusul al-Madani), aphorism 38",
    "source_url": "https://archive.org/details/AlfarabiSelectedAphorismsAndOtherTexts",
    "id": 103
-  },
-  {
-   "text": "A short work on calculating by completion and reduction, confining it to what is easiest and most useful in arithmetic, such as men constantly require in cases of inheritance, legacies, partition, law-suits, and trade.",
-   "author": "Al-Khwarizmi",
-   "source": "The Algebra of Mohammed ben Musa, c. 820, Preface, trans. Frederic Rosen, 1831",
-   "source_url": "https://archive.org/details/algebraofmohamme00khuwuoft",
-   "id": 104
   },
   {
    "text": "When a person is not doing his job, there can only be two reasons for it. The person either can’t do it or won’t do it; he is either not capable or not motivated.",
@@ -888,14 +787,6 @@
    "id": 123
   },
   {
-   "text": "Whatever is sown today is worth the sowing, because tomorrow is its harvest day.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Ne bukun ekilsa, bu maqbul erur, / Kim, anga tongla kuni mahsul erur.",
-   "id": 124
-  },
-  {
    "text": "Haste is the head of every ill-begotten act, deliberation the companion of every deed well done.",
    "author": "Yusuf Balasaguni",
    "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
@@ -909,13 +800,6 @@
    "source_url": "https://www.spot.uz/ru/2021/08/11/zafar-khashimov/",
    "original": "Планируя, вы можете настроить себе компас, но не сам путь.",
    "id": 126
-  },
-  {
-   "text": "Those of the chemical craft know well that no change can be effected in the different species of substances, though they can produce the appearance of such change.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "Kitab al-Shifa (The Book of Healing), on the congealing of stones",
-   "source_url": "https://en.wikipedia.org/wiki/Avicenna",
-   "id": 127
   },
   {
    "text": "All happy companies are different: each one earns a monopoly by solving a unique problem. All failed companies are the same: they failed to escape competition.",
@@ -953,35 +837,12 @@
    "id": 132
   },
   {
-   "text": "The head of virtue is the tongue. Whoever commands good speech gains honour by it.",
-   "author": "Mahmud al-Kashgari",
-   "source": "Dīwān Lughāt al-Turk, 1072–74 — Turkic proverb recorded by al-Kashgari, with his own Arabic gloss",
-   "source_url": "https://dergipark.org.tr/tr/download/article-file/5482923",
-   "original": "Erdem başı til",
-   "id": 133
-  },
-  {
    "text": "Sometimes I look at someone’s product and think: how is this even possible? Does the head of that company actually use this product himself?",
    "author": "Mikheil Lomtadze",
    "source": "«Михаил Ломтадзе впервые рассказал, как устроен Kaspi.kz», Tengrinews",
    "source_url": "https://tengrinews.kz/kazakhstan_news/mihail-lomtadze-vpervyie-rasskazal-kak-ustroen-kaspikz-490597/",
    "original": "Я иногда смотрю чей-то продукт и думаю: ну как так можно? Руководитель компании сам этим продуктом реально пользуется?",
    "id": 134
-  },
-  {
-   "text": "This book is not a polemical one. My book is nothing but a simple historic record of facts.",
-   "author": "Al-Biruni",
-   "source": "Alberuni’s India, c. 1030, Preface, trans. Edward C. Sachau",
-   "source_url": "https://archive.org/details/in.ernet.dli.2015.30168",
-   "id": 135
-  },
-  {
-   "text": "But what if you don’t turn bitter, and use those circumstances as a source of strength instead?",
-   "author": "Arsen Tomsky",
-   "source": "Talk at the UMAI forum, Astana, reported by Digital Business",
-   "source_url": "https://digitalbusiness.kz/2025-02-24/osnovatel-indrive-arsen-tomskiy-onespravedlivosti-molodih-predprinimatelyah-iplanah-naipo/",
-   "original": "Но что, если не становиться злым и использовать эти обстоятельства как источник силы?",
-   "id": 136
   },
   {
    "text": "The road to the Bentley is not one, two, three years. But work stubbornly for ten, twenty, thirty years and you will certainly get there.",
@@ -999,25 +860,11 @@
    "id": 138
   },
   {
-   "text": "There are no facts inside the building, so get the hell outside.",
-   "author": "Steve Blank",
-   "source": "The Startup Owner’s Manual",
-   "source_url": "https://steveblank.com/2009/03/20/supermac-war-story-2-facts-exist-outside-the-building-opinions-reside-within-%E2%80%93-so-get-the-hell-outside-the-building/",
-   "id": 139
-  },
-  {
    "text": "When a man’s judgments and advice have been tested many times and found sound, he is no longer asked for a proof of what he says.",
    "author": "Al-Farabi",
    "source": "Selected Aphorisms (Fusul al-Madani), aphorism 45",
    "source_url": "https://archive.org/details/AlfarabiSelectedAphorismsAndOtherTexts",
    "id": 140
-  },
-  {
-   "text": "...a short work on Calculating by (the rules of) Completion and Reduction, confining it to what is easiest and most useful in arithmetic, such as men constantly require in cases of inheritance, legacies, partition, law-suits, and trade.",
-   "author": "Al-Khwarizmi",
-   "source": "The Algebra of Mohammed ben Musa, c. 820, Dedication, trans. Frederic Rosen, 1831 — verified verbatim; restored to Rosen's wording and marked as a mid-sentence fragment",
-   "source_url": "https://archive.org/details/algebraofmohamme00khuwuoft",
-   "id": 141
   },
   {
    "text": "The output of a manager is the output of the organizational units under his or her supervision or influence.",
@@ -1041,13 +888,6 @@
    "id": 144
   },
   {
-   "text": "I believe starting a company is like jumping off a cliff and assembling a plane on the way down. Your willingness to jump is your most valuable asset as an entrepreneur.",
-   "author": "Reid Hoffman",
-   "source": "Reid Hoffman, on X",
-   "source_url": "https://x.com/reidhoffman/status/1481071139221049345",
-   "id": 145
-  },
-  {
    "text": "If you don’t want to take risks and step out of your comfort zone, better not to become an entrepreneur.",
    "author": "Timur Turlov",
    "source": "«Тимур Турлов и его принципы», Kompaniya (ko.ru)",
@@ -1056,27 +896,12 @@
    "id": 146
   },
   {
-   "text": "If you want your labors to be successful, start the job in hand wisely.",
-   "author": "Abai Kunanbaev",
-   "source": "The Book of Words, Word Thirty-Seven",
-   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t37.htm",
-   "id": 147
-  },
-  {
    "text": "Copying well is an art too. Anyone who thinks I just skim the cream off other people’s ideas should try stealing something competently and building a product out of it.",
    "author": "Akmal Paiziev",
    "source": "Spot.uz interview, “Цена провала: Акмаль Пайзиев про свои ошибки, проблемы со спецслужбами, закрытые проекты и сделанные выводы” (11 July 2019)",
    "source_url": "https://www.spot.uz/ru/2019/07/11/paiziev/",
    "original": "Хорошо скопировать — тоже искусство. Пусть все, кто считает, что я просто копирую и собираю сливки с чужих идей, попробует что-то грамотно «украсть» и построить продукт.",
    "id": 148
-  },
-  {
-   "text": "If you are human, do not call that one human who takes no grief from the grief of the people.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Odami ersang demagil odami, / Oniki yo‘q xalq g‘amidin g‘ami.",
-   "id": 149
   },
   {
    "text": "Whatever you undertake, consider what the issue will be, for if you fail to reckon the expense, it will turn out to be a loss.",
@@ -1092,13 +917,6 @@
    "source_url": "https://www.spot.uz/ru/2019/04/15/khashimov/",
    "original": "Ценная идея заключается в том, как это сделать, что сделает меня впереди всей толпы, которая пытается это сделать, как это сделать качественнее и дешевле.",
    "id": 151
-  },
-  {
-   "text": "The knowledge of anything is not acquired or complete unless it is known by its causes.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "The Canon of Medicine, c. 1025",
-   "source_url": "https://en.wikiquote.org/wiki/Avicenna",
-   "id": 152
   },
   {
    "text": "The most contrarian thing of all is not to oppose the crowd but to think for yourself.",
@@ -1152,13 +970,6 @@
    "id": 159
   },
   {
-   "text": "That man only is praiseworthy who shrinks from a lie and always adheres to the truth, enjoying credit even among liars.",
-   "author": "Al-Biruni",
-   "source": "Alberuni’s India, c. 1030, Preface, trans. Edward C. Sachau",
-   "source_url": "https://archive.org/details/in.ernet.dli.2015.30168",
-   "id": 160
-  },
-  {
    "text": "Many of us run into injustice. But what if you don't turn bitter, and use those circumstances as a source of strength instead?",
    "author": "Arsen Tomsky",
    "source": "Talk to UMAI women entrepreneurs in Astana, reported by Digital Business, 22 August 2025",
@@ -1204,14 +1015,6 @@
    "id": 166
   },
   {
-   "text": "Generosity is the noblest of qualities. Push it past measure and it is only waste.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Necha saxo ashrafi avsofdur, / Mufrit agar aylasang isrofdur.",
-   "id": 167
-  },
-  {
    "text": "Consultation is the medicine prescribed for every action proposed. Consult with a near one and your undertaking will prosper, fail to consult and you will rue the day.",
    "author": "Yusuf Balasaguni",
    "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
@@ -1225,13 +1028,6 @@
    "source_url": "https://www.spot.uz/ru/2021/08/11/zafar-khashimov/",
    "original": "Паровоз не может прийти в точку Б, оставив последний вагон в точке А.",
    "id": 169
-  },
-  {
-   "text": "As to the claims of the alchemists, it must be clearly understood that it is not in their power to bring about any true change of species. They can, however, produce excellent imitations.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "Kitab al-Shifa, sections on minerals, trans. Holmyard & Mandeville, Avicennae de Congelatione et Conglutinatione Lapidum (Paris, 1927), p. 41. REPLACED the candidate's wording, which was a loose English rendering of the medieval Latin 'Sciant artifices alchemiae' paraphrase circulated via Wikipedia, not a translation of Ibn Sina's Arabic.",
-   "source_url": "https://archive.org/details/HolmMandAvicMineralia",
-   "id": 170
   },
   {
    "text": "What important truth do very few people agree with you on?",
@@ -1269,14 +1065,6 @@
    "id": 175
   },
   {
-   "text": "Whoever spits at the sky gets it back on his own face.",
-   "author": "Mahmud al-Kashgari",
-   "source": "Dīwān Lughāt al-Turk, 1072–74 — Turkic proverb recorded by al-Kashgari",
-   "source_url": "https://dergipark.org.tr/tr/download/article-file/5482923",
-   "original": "Kökke sagursa, yüzke tüşer",
-   "id": 176
-  },
-  {
    "text": "The product has to be high-quality from the start. We can't afford to experiment on our customers.",
    "author": "Mikheil Lomtadze",
    "source": "Panel session at Digital Bridge 2025, Astana, 3 October 2025; transcript published by Digital Business",
@@ -1285,27 +1073,12 @@
    "id": 177
   },
   {
-   "text": "While you are seeking happiness, everybody wishes you well; but once you have attained it, your only well-wisher is yourself.",
-   "author": "Abai Kunanbaev",
-   "source": "The Book of Words, Word Thirty-Seven",
-   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t37.htm",
-   "id": 178
-  },
-  {
    "text": "I try to see the mistake as early as possible, and if it can’t be corrected I close the project. That way it costs me less.",
    "author": "Akmal Paiziev",
    "source": "Spot.uz interview, “Цена провала: Акмаль Пайзиев про свои ошибки, проблемы со спецслужбами, закрытые проекты и сделанные выводы” (11 July 2019)",
    "source_url": "https://www.spot.uz/ru/2019/07/11/paiziev/",
    "original": "Я стараюсь как можно раньше увидеть ошибку, и если ее невозможно исправить — закрываю проекты. Так она обходится мне дешевле.",
    "id": 179
-  },
-  {
-   "text": "He spreads a table for the one who is not hungry, and gives a coat to the one who is not bare.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Yoyar anga supraki, ul och emas, / Berur anga to‘nki, yalang‘och emas.",
-   "id": 180
   },
   {
    "text": "Whatever you wish to undertake, first consult your own heart, only then other people; and if your heart is not pleased with it, then stay away from it.",
@@ -1321,13 +1094,6 @@
    "source_url": "https://www.spot.uz/ru/2019/04/15/khashimov/",
    "original": "Труд, которым мы добываем свой хлеб, очень-очень мелкий и скрупулезный.",
    "id": 182
-  },
-  {
-   "text": "It is a dictum of the exact sciences that knowledge of a thing is attained only through a knowledge of the causes and the origins of the causes.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "The Canon of Medicine, c. 1025, Book I, Part 1, Thesis 2 (section 12), trans. O. Cameron Gruner. REPLACED the candidate's Wikiquote wording, which matches no verifiable translation.",
-   "source_url": "https://archive.org/details/avicenna-canon-of-medicine",
-   "id": 183
   },
   {
    "text": "Most businesses get zero distribution channels to work: poor sales rather than bad product is the most common cause of failure.",
@@ -1365,21 +1131,6 @@
    "id": 188
   },
   {
-   "text": "To the lazy man, even a cloud is a burden.",
-   "author": "Mahmud al-Kashgari",
-   "source": "Divanu Lugat al-Turk, 1072-74 — an anonymous Turkic proverb al-Kashgari recorded, not his own words. Verified in Mirzezade, Akademik Tarih ve Dusunce Dergisi 12:6 (2025). The candidate's 'shadow of a cloud' is that article author's interpretive addition; Atalay's standard reading is simply 'a cloud'.",
-   "source_url": "https://dergipark.org.tr/tr/download/article-file/5482923",
-   "original": "Ermegüge bulit yük bolur",
-   "id": 189
-  },
-  {
-   "text": "Judge a man’s qualities by the intentions of his action and not by its outcome.",
-   "author": "Abai Kunanbaev",
-   "source": "The Book of Words, Word Thirty-Seven",
-   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t37.htm",
-   "id": 190
-  },
-  {
    "text": "Imagine you’re fifty, and you think: I could have done more. You won’t know unless you try.",
    "author": "Akmal Paiziev",
    "source": "Spot.uz interview, “Цена провала: Акмаль Пайзиев про свои ошибки, проблемы со спецслужбами, закрытые проекты и сделанные выводы” (11 July 2019)",
@@ -1396,27 +1147,12 @@
    "id": 192
   },
   {
-   "text": "Words left unspoken are purest gold, but as soon as they emerge on the tongue, they turn to copper.",
-   "author": "Yusuf Balasaguni",
-   "source": "Kutadgu Bilig (Wisdom of Royal Glory), couplet 1916, trans. Robert Dankoff",
-   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
-   "original": "Sözüg sözlemese sav altun sanı, bakır boldı tildin çıkarsa anı.",
-   "id": 193
-  },
-  {
    "text": "Business is an absorbing game, a journey, not a war. Too many people treat it as war and use military words: seize the market, take it away.",
    "author": "Zafar Khashimov",
    "source": "Spot.uz interview, “Цена провала: Зафар Хашимов о том, как шесть лет закрывал City Taxi, почему не взлетел Five, своих ошибках и страхах” (11 August 2021)",
    "source_url": "https://www.spot.uz/ru/2021/08/11/zafar-khashimov/",
    "original": "Бизнес — это увлекательная игра, путешествие, не война. Многие воспринимают бизнес как войну, слишком много используют военных терминов: захватить, отнять рынок и так далее.",
    "id": 194
-  },
-  {
-   "text": "I read the Metaphysics, but did not understand its contents and was baffled by the author's intention; I read it over forty times, until I had the text by heart. Even then I did not understand it or what the author meant.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "Autobiography, in Avicenna on Theology, trans. A. J. Arberry (1951), p. 12. Candidate compressed roughly 120 words into two sentences with invented connective wording; restored to Arberry's text (recovered from a noisy scan).",
-   "source_url": "https://archive.org/details/in.gov.ignca.7274",
-   "id": 195
   },
   {
    "text": "Like acting, sales works best when hidden.",
@@ -1469,14 +1205,6 @@
    "id": 202
   },
   {
-   "text": "Do not mistake treasure and display for wealth. The treasure of wealth is having enough.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror (Wonder of the Good), c. 1483",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Ganj-u tajammulni g‘ino bilmagil, / Balki g‘ino ganji qanoatni bil.",
-   "id": 203
-  },
-  {
    "text": "As long as the wise man does not bring out wisdom upon his tongue, his wisdom may lie hidden for years and shed no light.",
    "author": "Yusuf Balasaguni",
    "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
@@ -1492,25 +1220,11 @@
    "id": 205
   },
   {
-   "text": "I prepared a set of files; with each proof I examined, I set down the syllogistic premisses and put them in order in the files, then I examined what deductions might be drawn from them.",
-   "author": "Ibn Sina (Avicenna)",
-   "source": "Autobiography, in Avicenna on Theology, trans. A. J. Arberry (1951) — restored to Arberry's wording; candidate dropped 'syllogistic' and changed 'the files' to 'a file'",
-   "source_url": "https://archive.org/details/in.gov.ignca.7274",
-   "id": 206
-  },
-  {
    "text": "If you’ve invented something new but you haven’t invented an effective way to sell it, you have a bad business, no matter how good the product.",
    "author": "Peter Thiel",
    "source": "Zero to One",
    "source_url": "https://www.goodreads.com/quotes/1550526-it-s-better-to-think-of-distribution-as-something-essential-to",
    "id": 207
-  },
-  {
-   "text": "I have yet to see a person who, having acquired wealth by dishonest means, has put it to good use. Ill-gotten gains are likewise ill spent.",
-   "author": "Abai Kunanbaev",
-   "source": "The Book of Words, Word Ten",
-   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t10.htm",
-   "id": 208
   },
   {
    "text": "Three things to beware of in business: loss of reputation, unjustified risks, and too many promises.",
@@ -1519,14 +1233,6 @@
    "source_url": "https://kapital.uz/akmal-payziev/",
    "original": "Три главных аспекта, которых нужно остерегаться в бизнесе: потеря репутации, неоправданные риски и чрезмерное количество обещаний.",
    "id": 209
-  },
-  {
-   "text": "Generosity is the noblest of qualities; but push it to excess and it is only waste.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror, c. 1483 — verified in Alisher Navoiy, Hayrat ul-abror, 9-jild (Tashkent: G'afur G'ulom, 2018)",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Necha saxo ashrafi avsofdur, / Mufrit agar aylasang isrofdur.",
-   "id": 210
   },
   {
    "text": "Whenever much labor is invested in a thing it becomes loved and desired.",
@@ -1557,21 +1263,6 @@
    "source_url": "https://kapital.uz/akmal-payziev/",
    "original": "Работа в какой-либо компании – это в первую очередь получение опыта. У кого я буду учиться в своей компании?",
    "id": 214
-  },
-  {
-   "text": "Do not take treasure and display for wealth; know rather that contentment is the treasure of wealth.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror, c. 1483 — verified in Alisher Navoiy, Hayrat ul-abror, 9-jild (Tashkent: G'afur G'ulom, 2018); from the chapter on qanoat (contentment)",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "Ganj-u tajammulni g'ino bilmagil, / Balki g'ino ganji qanoatni bil.",
-   "id": 215
-  },
-  {
-   "text": "For me work and pleasure walk side by side; the more I work, the happier I am!",
-   "author": "Yusuf Balasaguni",
-   "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
-   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
-   "id": 216
   },
   {
    "text": "I always do my shopping at korzinka.uz. You must taste your own business.",
@@ -1619,19 +1310,599 @@
    "id": 224
   },
   {
-   "text": "In speech there is nothing so unworthy as a lie.",
-   "author": "Alisher Navoi",
-   "source": "Hayrat ul-Abror, c. 1483 — verified in Alisher Navoiy, Hayrat ul-abror, 9-jild (Tashkent: G'afur G'ulom, 2018). 'nopisand' is closer to 'unworthy/unacceptable' than the candidate's 'contemptible'.",
-   "source_url": "https://lib.utu-ranch.uz/media/files/2024/08/24/Navoiy_A.Hayrat_ul-abror.9-jild2018.pdf",
-   "original": "So'z aro yolg'on kibi yo'q nopisand",
-   "id": 225
-  },
-  {
    "text": "One who begins his enterprise with knowledge will gain his desire in the end, no matter what it may be.",
    "author": "Yusuf Balasaguni",
    "source": "Kutadgu Bilig (Wisdom of Royal Glory), trans. Robert Dankoff",
    "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
    "id": 226
+  },
+  {
+   "text": "In business I have the feeling we're on an escalator running backwards; you have to run just to stay where you are.",
+   "author": "Zafar Khashimov",
+   "source": "Зафар Хашимов: об инвестициях, монополиях, НДС и ценах, будущем Узбекистана и многом другом (Spot.uz)",
+   "source_url": "https://www.spot.uz/ru/2019/04/15/khashimov/",
+   "original": "У меня такое ощущение, что в бизнесе мы на эскалаторе, который в обратную сторону идет — нужно бежать, чтобы хотя бы удерживаться.",
+   "id": 228
+  },
+  {
+   "text": "The valuable idea lies in how to do it: what will put me ahead of the whole crowd attempting the same thing, how to do it at better quality and more cheaply.",
+   "author": "Zafar Khashimov",
+   "source": "Зафар Хашимов: об инвестициях, монополиях, НДС и ценах, будущем Узбекистана и многом другом (Spot.uz)",
+   "source_url": "https://www.spot.uz/ru/2019/04/15/khashimov/",
+   "original": "Ценная идея заключается в том, как это сделать, что сделает меня впереди всей толпы, которая пытается это сделать, как это сделать качественнее и дешевле.",
+   "id": 271
+  },
+  {
+   "text": "Specialization matters enormously. Don't be a duck: you'll be able to fly, swim and walk, and do every one of them very badly. Better to fly, or swim, or walk. One thing.",
+   "author": "Zafar Khashimov",
+   "source": "Цитаты о бизнесе от основателя Korzinka.uz — Зафара Хашимова (Depozit.uz)",
+   "source_url": "https://depozit.uz/ru/news/korzinkauz-asoschisi-zafar-xoshimovdan-biznesga-oid-iqtiboslar",
+   "original": "Специализация очень важна. Не будь уткой — ты сможешь летать, плавать и ходить, но все делать очень плохо. Ты лучше лети, плавай или ходи. Что-то одно.",
+   "id": 289
+  },
+  {
+   "text": "I always do my shopping at korzinka.uz. You have to taste your own business.",
+   "author": "Zafar Khashimov",
+   "source": "Зафар Хашимов — о покупке Tesla, своей зарплате и первом миллионе (Spot.uz)",
+   "source_url": "https://www.spot.uz/ru/2020/10/17/khashimov/",
+   "original": "Я всегда совершаю покупки в korzinka.uz. Обязательно надо пробовать свой бизнес на вкус.",
+   "id": 298
+  },
+  {
+   "text": "A good business should sit in the second row from power.",
+   "author": "Zafar Khashimov",
+   "source": "Зафар Хашимов: об инвестициях, монополиях, НДС и ценах, будущем Узбекистана и многом другом (Spot.uz)",
+   "source_url": "https://www.spot.uz/ru/2019/04/15/khashimov/",
+   "original": "Хороший бизнес должен сидеть на втором ряду от власти.",
+   "id": 301
+  },
+  {
+   "text": "Local stories aren't interesting; they may fail to find a market and die quickly.",
+   "author": "Akmal Paiziev",
+   "source": "«Хотим быть причастны к созданию первого стартапа стоимостью $1 млрд» — Акмаль Пайзиев о запуске IMPACT.T (Spot.uz)",
+   "source_url": "https://www.spot.uz/ru/2022/03/10/impact-t/",
+   "original": "Локальные истории не интересны, они могут не найти рынок и быстро умереть.",
+   "id": 236
+  },
+  {
+   "text": "In a family, emotions prevail; in business, only cold calculation. These are opposite feelings.",
+   "author": "Akmal Paiziev",
+   "source": "Основатель MyTaxi и Express24 Акмаль Пайзиев о своем подходе к работе с родственниками (Kapital.uz)",
+   "source_url": "https://kapital.uz/akmal-payziev/",
+   "original": "Ведь в семье больше превалируют эмоции, а в бизнесе только холодный расчет – это противоположные друг другу чувства.",
+   "id": 279
+  },
+  {
+   "text": "Another mistake: we kept polishing the product toward perfection. We wanted to build the whole feature set at once, every detail worked through. In effect we tried to build a corporate service instead of quickly assembling an MVP, testing demand and starting to sell.",
+   "author": "Rustam Khamdamov",
+   "source": "«Вложили $200 тысяч личных средств». Как стартап из Узбекистана получил $12 млн от крупного банка (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2025-10-06/vlozhili-200-tisyach-lichnih-sredstv-kak-startap-iz-uzbekistana-poluchil-12-mln-ot-krupnogo-banka/",
+   "original": "Еще одна ошибка — доводили продукт до идеала. Хотели сразу сделать весь функционал, тщательно проработать каждую деталь. По сути, пытались построить корпоративный сервис вместо того, чтобы быстро собрать MVP, проверить спрос и начать продажи.",
+   "id": 235
+  },
+  {
+   "text": "Sometimes we slept in the stores: ran inventories, helped during promotions when the crowds came. I stood behind the register many times myself, to understand how it all works from the inside.",
+   "author": "Rustam Khamdamov",
+   "source": "«Вложили $200 тысяч личных средств». Как стартап из Узбекистана получил $12 млн от крупного банка (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2025-10-06/vlozhili-200-tisyach-lichnih-sredstv-kak-startap-iz-uzbekistana-poluchil-12-mln-ot-krupnogo-banka/",
+   "original": "Бывало, что ночевали в магазинах: проводили инвентаризации, помогали во время акций, когда были большие потоки покупателей. Сам много раз стоял за кассой, чтобы понять, как все работает изнутри.",
+   "id": 278
+  },
+  {
+   "text": "The first hundred customers were hard to win, but once they felt the value they began recommending us to others, and the business gradually started to grow.",
+   "author": "Rustam Khamdamov",
+   "source": "«Вложили $200 тысяч личных средств». Как стартап из Узбекистана получил $12 млн от крупного банка (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2025-10-06/vlozhili-200-tisyach-lichnih-sredstv-kak-startap-iz-uzbekistana-poluchil-12-mln-ot-krupnogo-banka/",
+   "original": "Первых сто клиентов было тяжело привлечь, но, когда они почувствовали ценность, то начали рекомендовать нас другим — так бизнес стал постепенно расти.",
+   "id": 296
+  },
+  {
+   "text": "Money isn't always what you need in order to make a product that works.",
+   "author": "Dildora Atadjanova",
+   "source": "Девушка из Узбекистана создала бизнес с оборотом в $500 тысяч, а теперь меняет работу агросектора (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2026-03-28/devushka-iz-uzbekistana-sozdala-biznes-s-oborotom-v-500-tisyach-a-teper-menyaet-rabotu-agrosektora/",
+   "original": "Деньги не всегда нужны, чтобы создать работающий продукт.",
+   "id": 233
+  },
+  {
+   "text": "A startup isn't always about a platform or a technology; it's more about the ability to grow several times over once the model starts to scale.",
+   "author": "Dildora Atadjanova",
+   "source": "Девушка из Узбекистана создала бизнес с оборотом в $500 тысяч, а теперь меняет работу агросектора (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2026-03-28/devushka-iz-uzbekistana-sozdala-biznes-s-oborotom-v-500-tisyach-a-teper-menyaet-rabotu-agrosektora/",
+   "original": "Стартап — не всегда про платформу или технологию, а скорее про способность кратно расти, когда модель начинает масштабироваться.",
+   "id": 276
+  },
+  {
+   "text": "Reality is always simple: the proof that it works is profit. If you have steady income, you don't spend your time on endless pitches and hunting for investment.",
+   "author": "Dildora Atadjanova",
+   "source": "Девушка из Узбекистана создала бизнес с оборотом в $500 тысяч, а теперь меняет работу агросектора (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2026-03-28/devushka-iz-uzbekistana-sozdala-biznes-s-oborotom-v-500-tisyach-a-teper-menyaet-rabotu-agrosektora/",
+   "original": "Но реальность всегда проста: показатель того, что это работает, — прибыль. Если у тебя есть стабильный доход, ты не тратишь время на бесконечные питчи и поиски инвестиций.",
+   "id": 294
+  },
+  {
+   "text": "If you can sell the idea, the product will most likely take off. If you can't, it's just interest without real demand.",
+   "author": "Uchkun Tulavov",
+   "source": "Как узбекистанец Учкун Тулавов создал FinTech-платформу Bito с оценкой более $10 миллионов (THE TECH)",
+   "source_url": "https://the-tech.kz/kak-bito-vyros-iz-idei-avtomatizaczii-biznesa-v-ekosistemu-dlya-msb",
+   "original": "Если ты можешь продать идею — продукт, скорее всего, взлетит. Если нет — это просто интерес без реального спроса.",
+   "id": 244
+  },
+  {
+   "text": "Many people think venture money is easy money. In fact it is very responsible money.",
+   "author": "Uchkun Tulavov",
+   "source": "Как узбекистанец Учкун Тулавов создал FinTech-платформу Bito с оценкой более $10 миллионов (THE TECH)",
+   "source_url": "https://the-tech.kz/kak-bito-vyros-iz-idei-avtomatizaczii-biznesa-v-ekosistemu-dlya-msb",
+   "original": "Многие думают, что венчурные деньги — это «легкие деньги», но на самом деле это очень ответственные деньги.",
+   "id": 287
+  },
+  {
+   "text": "If the product is merely an alternative to booking by telephone, it has no future.",
+   "author": "Dadamukhammad Salimov",
+   "source": "Парни из Узбекистана решили создать суперапп для ресторанов за $20 тыс. Вот в чем их идея (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2025-12-01/parni-iz-uzbekistana-reshili-sozdat-superapp-dlya-restoranov-za-20-tis-vot-v-chem-ih-ideya/",
+   "original": "Если продукт является лишь альтернативой бронированию по телефону, то у него нет будущего.",
+   "id": 239
+  },
+  {
+   "text": "As a matter of principle I didn't want to raise money just for an idea, the way many people do.",
+   "author": "Dadamukhammad Salimov",
+   "source": "Парни из Узбекистана решили создать суперапп для ресторанов за $20 тыс. Вот в чем их идея (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2025-12-01/parni-iz-uzbekistana-reshili-sozdat-superapp-dlya-restoranov-za-20-tis-vot-v-chem-ih-ideya/",
+   "original": "Я принципиально не хотел привлекать деньги просто «на идею», как это делают многие.",
+   "id": 282
+  },
+  {
+   "text": "We wrote the application as honestly as we could: what's already done, what works, and what doesn't yet. Embellishing is pointless, the YC partners see thousands of applications and sense fakery instantly. From repeat applicants they want to see one thing: progress.",
+   "author": "Beknazar Abdikamalov",
+   "source": "Парень из Нукуса запустил ИТ-проект в США и прошел в YC (DigitalBusiness.kz)",
+   "source_url": "https://digitalbusiness.kz/2026-06-11/uzbekistanets-privlek-1-6-mln-dlya-svoego-ai-startapa-i-proshel-v-y-combinator/",
+   "original": "Написали ее максимально честно: что уже сделано, что работает, а что пока нет. Приукрашивать бессмысленно — партнеры YC видят тысячи заявок и чувствуют фальшь мгновенно. А у тех, кто подается не в первый раз, они хотят видеть одно: прогресс.",
+   "id": 251
+  },
+  {
+   "text": "On a big market you can afford to be wrong: you can grow while losing customers and still show growth. In Kazakhstan you cannot. If a million customers do not love you, you have no chance of launching the next product.",
+   "author": "Mikheil Lomtadze",
+   "source": "Panel session at Digital Bridge 2025, Astana, 3 October 2025, reported by Digital Business",
+   "source_url": "https://digitalbusiness.kz/2025-10-03/mihail-lomtadze-raskril-sekret-kak-kaspi-kz-udalos-zahvatit-75-rinka/",
+   "original": "На больших рынках у тебя есть возможность ошибаться. Ты можешь расти, теряя клиентов, и все равно показывать рост. В Казахстане — нет. Если тебя не любит миллион клиентов, у тебя нет шансов запустить следующий продукт.",
+   "id": 234
+  },
+  {
+   "text": "However complicated the service, the description of it has to be simple enough that even a schoolchild understands.",
+   "author": "Mikheil Lomtadze",
+   "source": "Panel session at Digital Bridge 2025, Astana, 3 October 2025, reported by Digital Business",
+   "source_url": "https://digitalbusiness.kz/2025-10-03/mihail-lomtadze-raskril-sekret-kak-kaspi-kz-udalos-zahvatit-75-rinka/",
+   "original": "Даже если сервис суперсложный — описание должно быть простым, чтобы даже школьник понял.",
+   "id": 277
+  },
+  {
+   "text": "I do not believe in the advantage of being first. I believe in the advantage of being second.",
+   "author": "Mikheil Lomtadze",
+   "source": "«Цитаты Михаила Ломтадзе, которые стоит взять на заметку каждому стартапу», Digital Business",
+   "source_url": "https://digitalbusiness.kz/2025-04-04/czitaty-mihaila-lomtadze-kotorye-stoit-vzyat-na-zametku-kazhdomu-startapu/",
+   "original": "Я не верю в преимущество от того, что ты первый. Я верю в преимущество быть вторым.",
+   "id": 295
+  },
+  {
+   "text": "We look for injustice systematically. When we find it, we can launch either a new business or some nonprofit initiative around it.",
+   "author": "Arsen Tomsky",
+   "source": "«Арсен Томский, InDrive: Это ставка лет на сорок», Vlast.kz",
+   "source_url": "https://vlast.kz/persona/57896-arsen-tomskij-indrive-eto-stavka-let-na-sorok.html",
+   "original": "Мы системно ищем несправедливость, если ее находим, то можем запустить или новый бизнес или какую-то некоммерческую инициативу.",
+   "id": 232
+  },
+  {
+   "text": "I thought the site would pay for itself in a year or two. In fact it took about seven. But everything we did along the way gave us pleasure.",
+   "author": "Arsen Tomsky",
+   "source": "«Я постоянно думаю, как сделать мир лучше», интервью Арсена Томского, vc.ru",
+   "source_url": "https://vc.ru/life/1653470-ya-postoyanno-dumayu-kak-sdelat-mir-luchshe-sozdatel-indrive-arsen-tomskii-o-smyslah-i-motivacii-v-biznese",
+   "original": "Это было долго. Я думал, что это случится за год-два, а на самом деле лет семь. Но все, что мы делали всегда доставляло нам удовольствие.",
+   "id": 275
+  },
+  {
+   "text": "The meanings you create work as a filter: the people they do not grip quietly drain away. What is left is the people for whom it genuinely matters.",
+   "author": "Arsen Tomsky",
+   "source": "«Я постоянно думаю, как сделать мир лучше», интервью Арсена Томского, vc.ru",
+   "source_url": "https://vc.ru/life/1653470-ya-postoyanno-dumayu-kak-sdelat-mir-luchshe-sozdatel-indrive-arsen-tomskii-o-smyslah-i-motivacii-v-biznese",
+   "original": "Это действует как фильтр — те, кого эти смыслы не цепляют, потихоньку оттекают. Остаются только те, для кого это по-настоящему имеет значение, и ты работаешь с ценностными единомышленниками.",
+   "id": 293
+  },
+  {
+   "text": "It takes five to ten years to make all the basic business mistakes. Make them between fourteen and twenty four, while there is no family and no obligations, and you will feel far less social pressure than starting at thirty.",
+   "author": "Ramil Mukhoryapov",
+   "source": "Интервью «Рамиль Мухоряпов: Chocofamily станет больше Google, Facebook и Amazon», Zhazhda",
+   "source_url": "https://zhazhda.biz/interviews/ramil-muhoryapov",
+   "original": "Потому что нужно 5-10 лет, чтобы совершить все базовые бизнес-ошибки. И если ты их совершишь с 14 до 24 лет, к примеру, пока нет семьи и обязательств... ты испытаешь существенно меньше социального давления, чем если ты начнешь бизнес в 30 лет.",
+   "id": 242
+  },
+  {
+   "text": "Luck is at least half of success. But activity raises the odds of it falling your way: do a hundred meetings instead of twenty and your chances of a good deal go up fivefold.",
+   "author": "Ramil Mukhoryapov",
+   "source": "Интервью «Рамиль Мухоряпов: Chocofamily станет больше Google, Facebook и Amazon», Zhazhda",
+   "source_url": "https://zhazhda.biz/interviews/ramil-muhoryapov",
+   "original": "Я думаю, что это не менее 50% успеха. Другое дело, что предприниматели активностью могут увеличить себе шансы выпадения этой удачи. К примеру, если ты сделаешь 100 встреч вместо 20, то и шансы на удачную сделку повысятся в 5 раз.",
+   "id": 285
+  },
+  {
+   "text": "If I had properly understood what Kazakhstan was when we entered that market, I might never have come. But I could not see why it should not work out for me.",
+   "author": "Timur Turlov",
+   "source": "«С детства мечтал заработать»: Тимур Турлов о пути Freedom Finance к IPO на Nasdaq, The Bell",
+   "source_url": "https://thebell.io/s-detstva-mechtal-zarabotat-milliarder-timur-turlov-o-puti-freedom-finance-k-ipo-na-nasdaq",
+   "original": "Если бы я хорошо понимал, что такое Казахстан, когда мы выходили на тот рынок, я, может, и не приехал бы. Но я не понимал, почему у меня не должно получиться.",
+   "id": 243
+  },
+  {
+   "text": "We did a very simple thing: opened the telephone directory, started calling companies and booking meetings. In Moscow it takes fifty calls to get past the secretaries. In Almaty, seven calls in ten ended in a meeting.",
+   "author": "Timur Turlov",
+   "source": "«С детства мечтал заработать»: Тимур Турлов о пути Freedom Finance к IPO на Nasdaq, The Bell",
+   "source_url": "https://thebell.io/s-detstva-mechtal-zarabotat-milliarder-timur-turlov-o-puti-freedom-finance-k-ipo-na-nasdaq",
+   "original": "Делали мы очень простую штуку: открыли телефонный справочник, начали звонить по организациям и записываться на встречи... Когда в Москве пытаешься пробиться через секретарей и дозвониться до каких-то компаний, тебе обычно надо сделать 50 звонков. В Алма-Ате из десяти звонков семь заканчивались встречей.",
+   "id": 286
+  },
+  {
+   "text": "I do not hire people who need to be told what to do step by step. In their own field a person should understand it better than I do.",
+   "author": "Nikolai Babeshkin",
+   "source": "«Николай Бабешкин: Как крутятся Колёса», Forbes.kz",
+   "source_url": "https://forbes.kz/massmedia/boss_nashego_vremeni_1/",
+   "original": "Я не нанимаю людей, которым нужно говорить, что делать, по шагам... В своей сфере человек должен разбираться лучше меня.",
+   "id": 241
+  },
+  {
+   "text": "Number one means a gap of four or five times over your nearest competitors. That is what gives you the ability to dictate your terms in the market.",
+   "author": "Nikolai Babeshkin",
+   "source": "«Николай Бабешкин: Как крутятся Колёса», Forbes.kz",
+   "source_url": "https://forbes.kz/massmedia/boss_nashego_vremeni_1/",
+   "original": "Сделаю ремарку: №1 – это отрыв в 4–5 раз от наших ближайших конкурентов, что дает возможность диктовать свои условия на рынке.",
+   "id": 284
+  },
+  {
+   "text": "We look at the products in version one and we are deeply ashamed. We look at version two and we are merely ashamed. So the trend is positive.",
+   "author": "Arman Suleimenov",
+   "source": "«Арман Сулейменов: За первый nFactorial мне было очень стыдно, за второй – просто стыдно», Profit.kz",
+   "source_url": "https://profit.kz/cw/podcast/10781/",
+   "original": "Мы смотрим на продукты, которые были представлены на nFactorial ver 1.0 – нам очень стыдно. Смотрим на версии nFactorial ver 2.0 – нам просто стыдно. Так что положительная динамика есть.",
+   "id": 238
+  },
+  {
+   "text": "The ideal case is when the product is a kind of continuation of its author's own personality.",
+   "author": "Arman Suleimenov",
+   "source": "«Арман Сулейменов: За первый nFactorial мне было очень стыдно, за второй – просто стыдно», Profit.kz",
+   "source_url": "https://profit.kz/cw/podcast/10781/",
+   "original": "Идеальный вариант – это когда продукт является как бы продолжение психотипа его автора.",
+   "id": 281
+  },
+  {
+   "text": "Many people think the main thing at the start is chasing investment or building a network. First find the market: what problem you are solving, and whether it is big enough to build a global company on.",
+   "author": "Akylai Kasymkulova",
+   "source": "«Как кыргызстанка построила AI-стартап в США и привлекла $2,5 миллиона инвестиций», The Tech",
+   "source_url": "https://the-tech.kz/kak-kyrgyzstanka-postroila-ai-startap-v-ssha-i-privlekla-25-milliona-investiczij",
+   "original": "Многие считают, что на старте главное — искать инвестиции или строить нетворкинг. Но, на мой взгляд, сначала нужно найти рынок. Самое важное — понять, какую проблему вы решаете и достаточно ли она масштабна, чтобы на ее основе можно было построить глобальную компанию.",
+   "id": 237
+  },
+  {
+   "text": "When we raised our first money we started not with the biggest funds but with lesser known players. After the first deal everything changes: once one investor believes in the company, the rest start looking harder.",
+   "author": "Akylai Kasymkulova",
+   "source": "«Как кыргызстанка построила AI-стартап в США и привлекла $2,5 миллиона инвестиций», The Tech",
+   "source_url": "https://the-tech.kz/kak-kyrgyzstanka-postroila-ai-startap-v-ssha-i-privlekla-25-milliona-investiczij",
+   "original": "Когда мы привлекали первые инвестиции, то начинали не с крупнейших фондов, а с менее известных игроков. После первой сделки все меняется: если один инвестор поверил в компанию, остальные начинают внимательнее к ней присматриваться.",
+   "id": 280
+  },
+  {
+   "text": "I have met so many people with good ideas that ideas lost all value in my eyes long ago, because people do not carry them out anyway.",
+   "author": "Daniyar Amanaliev",
+   "source": "«Данияр Аманалиев: как безумная идея превратилась в ololo», K-News",
+   "source_url": "https://knews.kg/2016/02/22/daniyar-amanaliev-kak-bezumnaya-ideya-prevratilas-v-ololo/",
+   "original": "Я очень много людей с хорошими идеями встречал. Настолько много, что идеи в моих глазах уже давно обесценились, ведь люди их все равно не реализовывают.",
+   "id": 240
+  },
+  {
+   "text": "People are afraid to share an idea in case it gets stolen. Far more likely, talking about it develops the idea and wins it supporters who show you new openings. You may even find the person you will build it with.",
+   "author": "Daniyar Amanaliev",
+   "source": "«Данияр Аманалиев: как безумная идея превратилась в ololo», K-News",
+   "source_url": "https://knews.kg/2016/02/22/daniyar-amanaliev-kak-bezumnaya-ideya-prevratilas-v-ololo/",
+   "original": "Я часто вижу, что люди боятся делиться своими идеями, боятся, что их украдут. Понимаю, что такой риск всегда существует, однако гораздо вероятнее, что благодаря обсуждению идей с другими людьми ваша идея получит развитие, завоюет сторонников, которые подскажут вам новые возможности... А может, вы привлечете того, вместе с кем эту идею и реализуете однажды.",
+   "id": 283
+  },
+  {
+   "text": "Selling off other people's shelves is easier at the start, but much more likely to hit a dead end halfway.",
+   "author": "Alexey Li",
+   "source": "«Алексей Ли, Arbuz.kz: Рынок очень маленький и не выдержит двоих», Vlast.kz",
+   "source_url": "https://vlast.kz/biznes/31030-aleksej-li-arbuzkz-rynok-ocen-malenkij-i-ne-vyderzit-dvoih.html",
+   "original": "Вторая модель (некий агрегатор с чужими супермаркетами) более легка на старте, но имеет большую вероятность тупика в середине пути.",
+   "id": 247
+  },
+  {
+   "text": "Venture capital is not about many winners. In every niche at most one big player survives. Another can survive, but a hundred times smaller.",
+   "author": "Alex Mashrabov",
+   "source": "«Сооснователь Higgsfield AI рассказал, как создавали первый стартап-единорог в Казахстане», Digital Business",
+   "source_url": "https://digitalbusiness.kz/2025-10-03/soosnovatel-pervogo-startapa-edinoroga-iz-kazahstana-rasskazal-chego-ne-hvataet-nashemu-it/",
+   "original": "При этом нужно понимать: венчурный капитал не про «много победителей». В каждой нише выживает максимум один крупный игрок... Один игрок может выжить, но быть в 100 раз меньше.",
+   "id": 246
+  },
+  {
+   "text": "Of the requisites for conducting the affairs of dominion, nine tenths are deliberation, and counsel, and provident measures; and the sword is one portion only.",
+   "author": "Amir Timur",
+   "source": "Institutes Political and Military (Tuzukat-i Timuri), Book I, Designs and Enterprises, p. 7, trans. Major William Davy, ed. Joseph White, Oxford 1783. Traditionally ascribed to Timur; the surviving compilation is generally dated to the seventeenth century.",
+   "source_url": "https://archive.org/details/institutespoliti00timuiala",
+   "original": "AND behold this letter was a guide which pointed out to me the way; and shewed unto me, that of the requisites for conducting the affairs of dominion nine tenths are Deliberation, and Counsel, and provident Measures; and that the Sword is one portion only.",
+   "id": 227
+  },
+  {
+   "text": "One tried soldier, of magnanimity, and of bravery, and of resolution, and of skill, and of circumspection is more valuable than a thousand men who want discretion and knowledge. For one experienced and able soldier can direct the efforts of thousands of thousands.",
+   "author": "Amir Timur",
+   "source": "Institutes Political and Military (Tuzukat-i Timuri), Book I, Designs and Enterprises, p. 7, trans. Major William Davy, ed. Joseph White, Oxford 1783. Traditionally ascribed to Timur; the surviving compilation is generally dated to the seventeenth century.",
+   "source_url": "https://archive.org/details/institutespoliti00timuiala",
+   "original": "AND by experience it is known unto me, that one tried soldier, of magnanimity, and of bravery, and of resolution, and of skill, and of circumspection is more valuable than a thousand men who want discretion and knowledge. For one experienced and able soldier can direct the efforts of thousands of thousands.",
+   "id": 270
+  },
+  {
+   "text": "Victory over the foe proceedeth not from the greatness of armies, nor defeat from inferiority of numbers.",
+   "author": "Amir Timur",
+   "source": "Institutes Political and Military (Tuzukat-i Timuri), Book I, Designs and Enterprises, p. 7, trans. Major William Davy, ed. Joseph White, Oxford 1783. Quoted to the colon; the sentence continues by crediting divine favour and skilful measures. Traditionally ascribed to Timur; the surviving compilation is generally dated to the seventeenth century.",
+   "source_url": "https://archive.org/details/institutespoliti00timuiala",
+   "original": "AND by experience it is known unto me, that victory over the foe proceedeth not from the greatness of armies, nor defeat from inferiority of numbers: for conquest is obtained by the Divine Favour, and by skilful and judicious measures.",
+   "id": 288
+  },
+  {
+   "text": "I asked counsel from all, but I considered the good and the evil of every opinion, and from each I selected those things which were just and expedient.",
+   "author": "Amir Timur",
+   "source": "Institutes Political and Military (Tuzukat-i Timuri), Book I, Designs and Enterprises, p. 15, trans. Major William Davy, ed. Joseph White, Oxford 1783. Traditionally ascribed to Timur; the surviving compilation is generally dated to the seventeenth century.",
+   "source_url": "https://archive.org/details/institutespoliti00timuiala",
+   "original": "AND I asked counsel from all: but I considered the good and the evil of every opinion; and from each I selected those things which were just and expedient.",
+   "id": 297
+  },
+  {
+   "text": "A wise enemy is preferable to a foolish friend.",
+   "author": "Amir Timur",
+   "source": "Institutes Political and Military (Tuzukat-i Timuri), Book II, p. 327, trans. Major William Davy, ed. Joseph White, Oxford 1783. Timur illustrates it with Ameer Hoossein, whose friendship did him more harm than any enemy could. Traditionally ascribed to Timur; the surviving compilation is generally dated to the seventeenth century.",
+   "source_url": "https://archive.org/details/institutespoliti00timuiala",
+   "original": "AND by experience it was known unto me, that a wise enemy is preferable to a foolish friend.",
+   "id": 300
+  },
+  {
+   "text": "Treat them kindly and you may be sure that your good name will travel far. For these are they who spread one's name abroad, be it good or bad.",
+   "author": "Yusuf Balasaguni",
+   "source": "Kutadgu Bilig (Wisdom of Royal Glory), chapter 58, Associating with merchants, p. 184, trans. Robert Dankoff, University of Chicago Press 1983",
+   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
+   "original": "Such are the merchants. So consort with them, leave the door open. Treat them kindly and you may be sure that your good name will travel far. For these are they who spread one's name abroad, be it good or bad.",
+   "id": 229
+  },
+  {
+   "text": "If they do some work for you, pay their wages promptly, and give them liberally of food and drink, lest you earn a bad name among the people.",
+   "author": "Yusuf Balasaguni",
+   "source": "Kutadgu Bilig (Wisdom of Royal Glory), chapter 60, Associating with craftsmen, p. 185, trans. Robert Dankoff, University of Chicago Press 1983",
+   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
+   "original": "Associate with them, make them your friends, and you will live a happy life. If they do some work for you, pay their wages promptly, and give them liberally of food and drink, lest you earn a bad name among the people.",
+   "id": 272
+  },
+  {
+   "text": "He ought to be close-fisted rather than open-handed. Then the treasury won't be squandered. Liberality is a fine thing in its place, but not with another man's property!",
+   "author": "Yusuf Balasaguni",
+   "source": "Kutadgu Bilig (Wisdom of Royal Glory), The qualifications of a treasurer, p. 132, trans. Robert Dankoff, University of Chicago Press 1983",
+   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
+   "id": 290
+  },
+  {
+   "text": "When he borrows he must pay back promptly, so that others will readily lend to him when he asks them. As long as he is flexible in transactions and his conduct is upright, he will not lack for funds when he needs them.",
+   "author": "Yusuf Balasaguni",
+   "source": "Kutadgu Bilig (Wisdom of Royal Glory), The qualifications of a treasurer, p. 132, trans. Robert Dankoff, University of Chicago Press 1983",
+   "source_url": "https://archive.org/details/wisdom-of-royal-glory-kutadgu-bilig-a-turko-islamic-mirror-for-princes",
+   "original": "In the matter of loans he should be flexible, greeting great and small with sweet words. But when he borrows he must pay back promptly, so that others will readily lend to him when he asks them. As long as he is flexible in transactions and his conduct is upright, he will not lack for funds when he needs them.",
+   "id": 299
+  },
+  {
+   "text": "When first observed, the stupid person has the form of an intelligent person, and his intention is a sound intention. Frequently, his deliberation lands him in evil, even though he was not aiming to fall into it.",
+   "author": "Al-Farabi",
+   "source": "Selected Aphorisms (Fusul al-Madani), aphorism 49, p. 34, trans. Charles E. Butterworth, in Alfarabi, The Political Writings, Cornell University Press 2001",
+   "source_url": "https://archive.org/details/AlfarabiSelectedAphorismsAndOtherTexts",
+   "original": "Therefore, when first observed, the stupid person has the form of an intelligent person, and his intention is a sound intention. Frequently, his deliberation lands him in evil, even though he was not aiming to fall into it.",
+   "id": 245
+  },
+  {
+   "text": "In his shop every kind of goods is in stock, except fair dealing.",
+   "author": "Alisher Navoi",
+   "source": "Mahbub ul-Qulub (Beloved of Hearts), 1500, twenty-seventh chapter, On those who buy and sell in the city. Uzbek text verified in the edition linked; the English is rendered from it, as no standard published English translation of this passage was found.",
+   "source_url": "https://turuz.com/storage/beyhadi/2016-9/0968_Nevayi_Mahbubul_Qulub_Latin-89s.pdf",
+   "original": "Do‘konida barcha mato’ mavjud, g‘ayri insof.",
+   "id": 231
+  },
+  {
+   "text": "When he buys, he calls the linen coarse cotton; when he sells, he finds a hundred words to set coarse cotton above linen.",
+   "author": "Alisher Navoi",
+   "source": "Mahbub ul-Qulub (Beloved of Hearts), 1500, twenty-seventh chapter, On those who buy and sell in the city. Uzbek text verified in the edition linked; the English is a compressed rendering of it, as no standard published English translation of this passage was found.",
+   "source_url": "https://turuz.com/storage/beyhadi/2016-9/0968_Nevayi_Mahbubul_Qulub_Latin-89s.pdf",
+   "original": "Olurda katonni bo‘z deb, sotarda bo‘z vasfida katondin ortug‘ yuz so‘z deb.",
+   "id": 274
+  },
+  {
+   "text": "Honest trade they count a loss, and keeping a promise they count a wrong.",
+   "author": "Alisher Navoi",
+   "source": "Mahbub ul-Qulub (Beloved of Hearts), 1500, twenty-eighth chapter, On the tradesmen of the bazaar. Uzbek text verified in the edition linked; the English is rendered from it, as no standard published English translation of this passage was found.",
+   "source_url": "https://turuz.com/storage/beyhadi/2016-9/0968_Nevayi_Mahbubul_Qulub_Latin-89s.pdf",
+   "original": "Rostliq bila savdo alarg‘a ziyonkorlik va va’dag‘a vafo alarg‘a badkirdorliq.",
+   "id": 292
+  },
+  {
+   "text": "They may not endeavor to improve their skill by seeking to learn from better artisans. Content with what little proficiency they have, such people indulge in indolence.",
+   "author": "Abai Kunanbaev",
+   "source": "The Book of Words, Word Thirty-Three. In context, they are those on whom God has bestowed some skill, and this is the first of their vices.",
+   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t33.htm",
+   "original": "Әуелі: бұл ісімді ол ісімнен асырайын деп, артық ісмерлер іздеп жүріп, көріп, біраз істес болып, өнер арттырайын деп, түзден өнер іздемейді. Осы қолындағы аз-мұзына мақтанып, осы да болады деп, баяғы қазақтың талапсыздығына тартып, жатып алады.",
+   "id": 230
+  },
+  {
+   "text": "There are those who, having acquired a few livestock, imagine themselves to be rich, and become lazy, boastful and careless in their work.",
+   "author": "Abai Kunanbaev",
+   "source": "The Book of Words, Word Thirty-Three",
+   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t33.htm",
+   "original": "Екінші: ерінбей істей беру керек қой. Бір-екі қара тапса, малға бөге қалған кісімсіп, «маған мал жоқ па?» дегендей қылып, еріншектік, салдау-салғырттыққа, кербездікке салынады.",
+   "id": 273
+  },
+  {
+   "text": "Unless you practice your skills, you may lose them and turn into a different person without even noticing it.",
+   "author": "Abai Kunanbaev",
+   "source": "The Book of Words, Word Forty-Three",
+   "source_url": "https://www.leneshmidt-translations.com/book_of_words_abai_kunanbaev_english/t43.htm",
+   "original": "Көп заман тексермесең, тауып алған өнеріңнің жоғалғандығын және өзіңнің ол мезгілдегіден бір басқа адам болып кеткеніңді білмей қаласың.",
+   "id": 291
+  },
+  {
+   "text": "When you're a carpenter making a beautiful chest of drawers, you're not going to use a piece of plywood on the back, even though it faces the wall and nobody will ever see it. You'll know it's there, so you're going to use a beautiful piece of wood on the back.",
+   "author": "Steve Jobs",
+   "source": "Playboy Interview: Steven Jobs (1985)",
+   "source_url": "https://allaboutstevejobs.com/verbatim/interviews/playboy_1985",
+   "original": "When you're a carpenter making a beautiful chest of drawers, you're not going to use a piece of plywood on the back, even though it faces the wall and nobody will ever see it. You'll know it's there, so you're going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through.",
+   "id": 264
+  },
+  {
+   "text": "For the first couple years that you're making stuff, what you're making isn't so good. But your taste, the thing that got you into the game, your taste is still killer, and your taste is good enough that you can tell that what you're making is kind of a disappointment to you.",
+   "author": "Ira Glass",
+   "source": "Ira Glass on Storytelling, Part 3 (transcript)",
+   "source_url": "https://www.themarginalian.org/2014/01/29/ira-glass-success-daniel-sax/",
+   "original": "But it's like there's a gap, that for the first couple years that you're making stuff, what you're making isn't so good, OK? It's not that great. It's really not that great. It's trying to be good, it has ambition to be good, but it's not quite that good. But your taste, the thing that got you into the game, your taste is still killer, and your taste is good enough that you can tell that what you're making is kind of a disappointment to you.",
+   "id": 255
+  },
+  {
+   "text": "The recipe for great work is: very exacting taste, plus the ability to gratify it.",
+   "author": "Paul Graham",
+   "source": "Taste for Makers",
+   "source_url": "https://paulgraham.com/taste.html",
+   "id": 263
+  },
+  {
+   "text": "Nothing must be arbitrary or left to chance. Care and accuracy in the design process show respect towards the user.",
+   "author": "Dieter Rams",
+   "source": "Ten Principles for Good Design, principle 8",
+   "source_url": "https://www.vitsoe.com/us/about/good-design",
+   "original": "Good design is thorough down to the last detail. Nothing must be arbitrary or left to chance. Care and accuracy in the design process show respect towards the user.",
+   "id": 252
+  },
+  {
+   "text": "The life of a designer is a life of fight: fight against the ugliness. Just like a doctor fights against disease. For us, the visual disease is what we have around, and what we try to do is to cure it somehow, with design.",
+   "author": "Massimo Vignelli",
+   "source": "Helvetica (film by Gary Hustwit, 2007)",
+   "source_url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=helvetica",
+   "id": 261
+  },
+  {
+   "text": "Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.",
+   "author": "Antoine de Saint-Exupery",
+   "source": "Terre des Hommes (Wind, Sand and Stars), ch. III",
+   "source_url": "https://en.wikiquote.org/wiki/Antoine_de_Saint_Exup%C3%A9ry",
+   "original": "Il semble que la perfection soit atteinte non quand il n'y a plus rien a ajouter, mais quand il n'y a plus rien a retrancher.",
+   "id": 249
+  },
+  {
+   "text": "Quality control was always foremost in our minds, because if a tool failed, it could kill someone, and since we were our own best customers, there was a good chance it would be us.",
+   "author": "Yvon Chouinard",
+   "source": "Let My People Go Surfing: The Education of a Reluctant Businessman",
+   "source_url": "https://www.goodreads.com/book/show/22155.Let_My_People_Go_Surfing",
+   "id": 268
+  },
+  {
+   "text": "Once you decide on your occupation, you must immerse yourself in your work. You have to fall in love with your work. You must dedicate your life to mastering your skill.",
+   "author": "Jiro Ono",
+   "source": "Jiro Dreams of Sushi (2011)",
+   "source_url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=jiro-dreams-of-sushi",
+   "original": "Once you decide on your occupation you must immerse yourself in your work. You have to fall in love with your work. Never complain about your job. You must dedicate your life to mastering your skill. That's the secret of success and is the key to being regarded honorably.",
+   "id": 258
+  },
+  {
+   "text": "Cease dependence on inspection to achieve quality. Eliminate the need for inspection on a mass basis by building quality into the product in the first place.",
+   "author": "W. Edwards Deming",
+   "source": "Out of the Crisis, point 3 of the Fourteen Points",
+   "source_url": "https://deming.org/explore/fourteen-points/",
+   "id": 267
+  },
+  {
+   "text": "I made 5,127 prototypes of my vacuum before I got it right. There were 5,126 failures. But I learned from each one.",
+   "author": "James Dyson",
+   "source": "Failure Doesn't Suck, Fast Company (May 2007)",
+   "source_url": "https://www.fastcompany.com/59549/failure-doesnt-suck",
+   "original": "I made about 5,127 prototypes of my vacuum before I got it right. There were 5,126 failures. But I learned from each one. That's how I came up with a solution. So I don't mind failure.",
+   "id": 257
+  },
+  {
+   "text": "It's sad and frustrating that we are surrounded by products that seem to testify to a complete lack of care.",
+   "author": "Jony Ive",
+   "source": "Interview in The Daily Telegraph (November 2005)",
+   "source_url": "https://en.wikiquote.org/wiki/Jonathan_Ive",
+   "id": 259
+  },
+  {
+   "text": "Skill in writing frees you to write what you want to write. It may also show you what you want to write. Craft enables art.",
+   "author": "Ursula K. Le Guin",
+   "source": "Steering the Craft, introduction",
+   "source_url": "https://thearchetypist.substack.com/p/art-and-craft-steering-the-craft",
+   "id": 266
+  },
+  {
+   "text": "Shitty first drafts: all good writers write them. This is how they end up with good second drafts and terrific third drafts.",
+   "author": "Anne Lamott",
+   "source": "Bird by Bird: Some Instructions on Writing and Life",
+   "source_url": "http://www.nicoleannwilliams.com/uploads/5/6/9/7/569783/shitty_first_drafts_lamott-_full_text.pdf",
+   "original": "Now, practically even better news than that of short assignments is the idea of shitty first drafts. All good writers write them. This is how they end up with good second drafts and terrific third drafts.",
+   "id": 248
+  },
+  {
+   "text": "Simplicity is prerequisite for reliability.",
+   "author": "Edsger W. Dijkstra",
+   "source": "How do we tell truths that might hurt? (EWD498)",
+   "source_url": "https://www.cs.virginia.edu/~evans/cs655/readings/ewd498.html",
+   "id": 253
+  },
+  {
+   "text": "Design is not the act of amazing an audience with the novelty of forms or materials; it is the originality that repeatedly extracts astounding ideas from the crevices of the very commonness of everyday life.",
+   "author": "Kenya Hara",
+   "source": "Designing Design",
+   "source_url": "https://www.goodreads.com/book/show/2034402.Designing_Design",
+   "id": 260
+  },
+  {
+   "text": "Professionalism is not enough: the good is the enemy of the great. What professionalism means in most cases is diminishing risks, and what is required in our field, more than anything else, is the continuous transgression.",
+   "author": "Milton Glaser",
+   "source": "Ten Things I Have Learned (AIGA talk, London, 2001)",
+   "source_url": "https://www.miltonglaser.com/milton/c:essays/",
+   "original": "PROFESSIONALISM IS NOT ENOUGH OR THE GOOD IS THE ENEMY OF THE GREAT. After I did it for a while I realized that professionalism itself was a limitation. What professionalism means in most cases is diminishing risks. What is required in our field, more than anything else, is the continuous transgression.",
+   "id": 262
+  },
+  {
+   "text": "Writing to me is an advanced and slow form of reading. If you find a book you really want to read but it hasn't been written yet, then you must write it.",
+   "author": "Toni Morrison",
+   "source": "Address to the Ohio Arts Council (1981), reported in The Cincinnati Enquirer, 27 September 1981",
+   "source_url": "https://quoteinvestigator.com/2018/07/16/unwritten/",
+   "id": 265
+  },
+  {
+   "text": "I don't design nice buildings. I don't like them. I like architecture to have some raw, vital, earthy quality.",
+   "author": "Zaha Hadid",
+   "source": "Zaha Hadid (1950-2016): I Don't Design Nice Buildings, Business Vision (2016)",
+   "source_url": "https://bv.world/innovation/leadership/2016/05/zaha-hadid-1950-2016-i-dont-design-nice-buildings/",
+   "original": "As a woman, I'm expected to want everything to be nice, and to be nice myself. A very English thing. I don't design nice buildings. I don't like them. I like architecture to have some raw, vital, earthy quality.",
+   "id": 269
+  },
+  {
+   "text": "Ultimately, literature is nothing but carpentry. Writing something is almost as hard as making a table. Very little magic and a lot of hard work are involved.",
+   "author": "Gabriel Garcia Marquez",
+   "source": "The Art of Fiction No. 69, The Paris Review, issue 82",
+   "source_url": "https://en.wikiquote.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez",
+   "original": "Ultimately, literature is nothing but carpentry. Both are very hard work. Writing something is almost as hard as making a table. Both are full of tricks and techniques. Very little magic and a lot of hard work are involved.",
+   "id": 254
+  },
+  {
+   "text": "Type well used is invisible as type, just as the perfect talking voice is the unnoticed vehicle for the transmission of words, ideas.",
+   "author": "Beatrice Warde",
+   "source": "The Crystal Goblet, or Why Printing Should Be Invisible",
+   "source_url": "https://readings.design/PDF/The%20Crystal%20Goblet.pdf",
+   "id": 250
+  },
+  {
+   "text": "Not excellence. Perfection. You aim for perfection, you will attain excellence. If you aim for excellence, you will go lower.",
+   "author": "J. R. D. Tata",
+   "source": "Believing in Perfection, New India Digest (biographer's recollection)",
+   "source_url": "https://en.wikiquote.org/wiki/J._R._D._Tata",
+   "id": 256
   }
  ]
 }

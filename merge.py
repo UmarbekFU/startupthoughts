@@ -19,10 +19,10 @@ from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "data")
-SESSION = os.path.expanduser(
-    "~/.claude/projects/-Users-umar-Desktop-StartupThoughts/"
-    "3b37473b-55ce-4ed8-8458-52838b5ad8c3/subagents/workflows"
-)
+# every session this project has had, not just the one that wrote this file
+PROJECT = os.path.expanduser(
+    "~/.claude/projects/-Users-umar-Desktop-StartupThoughts")
+SESSION = os.path.join(PROJECT, "*", "subagents", "workflows")
 
 MAX_LEN = 300          # a thought, not a passage
 MAX_PER_PERSON = 12          # no individual may swamp the collection
